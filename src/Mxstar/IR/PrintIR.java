@@ -298,34 +298,8 @@ public class PrintIR implements IRVisitor {
 
     @Override
     public void visit(UnaryInst inst) {
-        if(inst.op == UnaryInst.UnaryOp.DEC || inst.op == UnaryInst.UnaryOp.INC){
-            //System.err.println(inst.tpos);
-            nstr.append("\t" + "addi" + " ");
-
-
-            inst.tpos.accept(this);
-
-            //左参数需要修改
-            nstr.append(", ");
-            inst.tpos.accept(this);
-            nstr.append(", ");
-            if(inst.op == UnaryInst.UnaryOp.DEC )
-                nstr.append(-1);
-            else
-                nstr.append(1);
-            nstr.append("\n");
-
-            if(inst.tpos instanceof AlloSpace){
-                getpos(((AlloSpace)inst.tpos));
-                tmpstr.append("\tsw t0, 0(tp)\n");//t0是临时值
-                nstr.append(tmpstr);
-                tmpstr.delete(0,tmpstr.length());
-            }
-
-            stringBuilder.append(nstr);
-            nstr.delete(0, nstr.length());
-        } else {
-            nstr.append("\t" + inst.op.toString().toLowerCase() + " ");
+        if(inst.op == UnaryInst.UnaryOp.LOGICNEG){
+            nstr.append("\t" + UnaryInst.UnaryOp.NOT.toString().toLowerCase() + " ");
             inst.tpos.accept(this);
             nstr.append(", ");
             inst.tpos.accept(this);
@@ -333,6 +307,43 @@ public class PrintIR implements IRVisitor {
             nstr.append("\n");
             stringBuilder.append(nstr);
             nstr.delete(0, nstr.length());
+        } else {
+            if (inst.op == UnaryInst.UnaryOp.DEC || inst.op == UnaryInst.UnaryOp.INC) {
+                //System.err.println(inst.tpos);
+                nstr.append("\t" + "addi" + " ");
+
+
+                inst.tpos.accept(this);
+
+                //左参数需要修改
+                nstr.append(", ");
+                inst.tpos.accept(this);
+                nstr.append(", ");
+                if (inst.op == UnaryInst.UnaryOp.DEC)
+                    nstr.append(-1);
+                else
+                    nstr.append(1);
+                nstr.append("\n");
+
+                if (inst.tpos instanceof AlloSpace) {
+                    getpos(((AlloSpace) inst.tpos));
+                    tmpstr.append("\tsw t0, 0(tp)\n");//t0是临时值
+                    nstr.append(tmpstr);
+                    tmpstr.delete(0, tmpstr.length());
+                }
+
+                stringBuilder.append(nstr);
+                nstr.delete(0, nstr.length());
+            } else {
+                nstr.append("\t" + inst.op.toString().toLowerCase() + " ");
+                inst.tpos.accept(this);
+                nstr.append(", ");
+                inst.tpos.accept(this);
+                //tag1
+                nstr.append("\n");
+                stringBuilder.append(nstr);
+                nstr.delete(0, nstr.length());
+            }
         }
     }
 

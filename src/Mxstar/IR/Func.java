@@ -128,7 +128,6 @@ public class Func {
                 tot++;
                 bb.successers.add(((Cjump)bb.tail).thenblock);
                 bb.successers.add(((Cjump)bb.tail).elseblock);
-
             } else if (bb.tail instanceof Jump) {
                 bb.successers.add(((Jump)bb.tail).toBB);
             }

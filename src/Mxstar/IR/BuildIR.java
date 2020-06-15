@@ -422,7 +422,9 @@ public class BuildIR implements AstVisitor {
         node.expression.accept(this);
         if(true) {
             curBB = thenBB;
-            node.thenStmt.accept(this);
+            if(node.thenStmt != null) {
+                node.thenStmt.accept(this);
+            }
             curBB.append(new Jump(curBB, afterBB));
         }
         if (node.elseStmt != null) {
@@ -703,9 +705,11 @@ public class BuildIR implements AstVisitor {
     @Override
     public void visit(UnaryExpr node) {
         if (node.op.equals("!")) {
+            if(False.get(node) != null) {
+                True.put(node.expr, False.get(node));
+                False.put(node.expr, True.get(node));
+            }
             node.expr.accept(this);
-            True.put(node.expr, False.get(node));
-            False.put(node.expr, True.get(node));
         }
         node.expr.accept(this);
         Operand operand = Result.get(node.expr);
@@ -743,6 +747,9 @@ public class BuildIR implements AstVisitor {
                 break;
             }
             default: {
+                VirtualReg val = new VirtualReg("val");
+                curBB.append(new Move(curBB, val, operand));
+                curBB.append(new UnaryInst(curBB, nop, val));
                 Result.put(node, operand);
             }
         }

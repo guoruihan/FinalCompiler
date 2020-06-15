@@ -131,6 +131,9 @@ public class Mxstar {
         BuildStack stackFrameBuilder = new BuildStack(irProgram);
         stackFrameBuilder.run();
 
+        //String output_path = "output.s";
+
+
         String output_path = "output.s";
         PrintStream ps = new PrintStream(output_path);
         System.setOut(ps);

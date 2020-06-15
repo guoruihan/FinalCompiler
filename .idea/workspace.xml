@@ -8,12 +8,15 @@
       <change beforePath="$PROJECT_DIR$/bin/Mxstar/IR/Func.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Mxstar/IR/Func.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Mxstar/IR/PrintIR.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Mxstar/IR/PrintIR.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Mxstar/Mxstar.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Mxstar/Mxstar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/builtin.s" beforeDir="false" afterPath="$PROJECT_DIR$/builtin.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/FrontEnd/AstBuild.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/FrontEnd/AstBuild.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/BuildIR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/BuildIR.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Func.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Func.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/PrintIR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/PrintIR.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Mxstar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Mxstar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/file.in" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/file.in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ravel.out" beforeDir="false" afterPath="$PROJECT_DIR$/ravel.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/FrontEnd/AstBuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/FrontEnd/AstBuild.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/BuildIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/BuildIR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/Func.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/Func.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/PrintIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/PrintIR.java" afterDir="false" />
@@ -79,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592204875668</updated>
-      <workItem from="1592204880380" duration="14326000" />
+      <workItem from="1592204880380" duration="20141000" />
     </task>
     <servers />
   </component>
@@ -103,22 +106,22 @@
       <screen x="0" y="0" width="1463" height="783" />
     </state>
     <state x="495" y="194" key="FileChooserDialogImpl/0.0.1463.783@0.0.1463.783" timestamp="1592215991697" />
-    <state width="1420" height="131" key="GridCell.Tab.0.bottom" timestamp="1592229515952">
+    <state width="1420" height="161" key="GridCell.Tab.0.bottom" timestamp="1592238393753">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="131" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1592229515952" />
-    <state width="1420" height="131" key="GridCell.Tab.0.center" timestamp="1592229515952">
+    <state width="1420" height="161" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1592238393753" />
+    <state width="1420" height="161" key="GridCell.Tab.0.center" timestamp="1592238393753">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="131" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1592229515952" />
-    <state width="1420" height="131" key="GridCell.Tab.0.left" timestamp="1592229515952">
+    <state width="1420" height="161" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1592238393753" />
+    <state width="1420" height="161" key="GridCell.Tab.0.left" timestamp="1592238393752">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="131" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1592229515952" />
-    <state width="1420" height="131" key="GridCell.Tab.0.right" timestamp="1592229515952">
+    <state width="1420" height="161" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1592238393752" />
+    <state width="1420" height="161" key="GridCell.Tab.0.right" timestamp="1592238393753">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="131" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1592229515952" />
+    <state width="1420" height="161" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1592238393753" />
     <state width="1420" height="71" key="GridCell.Tab.1.bottom" timestamp="1592222601926">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
@@ -150,5 +153,8 @@
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/FinalSubmit$Mxstar.ic" NAME="Mxstar Coverage Results" MODIFIED="1592234024118" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

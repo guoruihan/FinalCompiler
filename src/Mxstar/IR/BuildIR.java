@@ -159,6 +159,7 @@ public class BuildIR implements AstVisitor {
         functionMap.put("getString", new Func("getString", true));
         functionMap.put("getInt", new Func("getInt", true));
         functionMap.put("toString", new Func("toString", true));
+        functionMap.put("__lib_array_size", new Func("__lib_array_size", true));
         functionMap.put("string.length", new Func("string_length", true));
         functionMap.put("string.ord", new Func("string_ord", true));
         functionMap.put("string.parseInt", new Func("string_parseInt", true));
@@ -618,13 +619,14 @@ public class BuildIR implements AstVisitor {
     @Override
     public void visit(NewExpr node) {
         Func constructor;
-        if(node.emptyDim == 0 || !(node.type instanceof ClassType)){
+        if(!(node.type instanceof ClassType)){
             constructor = null;
         } else {
             ClassType classType = (ClassType)(node.type);
             if (classType.name.equals("string") || classType.symbol.symbolTable.getFS(classType.name) == null) {
                 constructor = null;
             } else {
+
                 constructor = functionMap.get(classType.name + "." + classType.name);
                 if (constructor == null) {
                     System.out.println("!!!there's no " + classType.name);
@@ -666,7 +668,19 @@ public class BuildIR implements AstVisitor {
         curBB.append(new Move(curBB, baseAddr, Result.get(node.object)));
 
         if (node.object.type instanceof ArrayType) {
-            Result.put(node, new AlloSpace(baseAddr));//无容身之所qwq
+            if(node.methodCall.functionName.equals("size")){
+                Func func = functionMap.get("__lib_array_size");
+                LinkedList<Operand> args = new LinkedList<>();
+                args.add(baseAddr);
+                args.add(va0);
+                curBB.append(new Call(curBB, va0, func, args));
+
+                VirtualReg retvalue = new VirtualReg("");
+                curBB.append(new Move(curBB, retvalue, va0));
+                Result.put(node, retvalue);
+            } else {
+                Result.put(node, new AlloSpace(baseAddr));//无容身之所qwq
+            }
         } else {//classType
             ClassType classType = (ClassType)node.object.type;
             Operand operand;

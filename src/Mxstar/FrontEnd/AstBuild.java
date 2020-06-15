@@ -1,6 +1,7 @@
 package Mxstar.FrontEnd;
 
 import Mxstar.Ast.Statement.*;
+import Mxstar.IR.Inst.Cdq;
 import Mxstar.Symbol.*;
 import Parser.*;
 import Mxstar.ErrorProcessor.*;
@@ -477,6 +478,7 @@ public class AstBuild extends MxstarBaseVisitor<Object> {
                     if (ClassDecl.construct != null) {
                         errorListener.addError(new Position(c), "too many construction function");
                     } else {
+
                         ClassDecl.construct = visitConstructDefinition(c.constructDefinition());
                     }
                 }

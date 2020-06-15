@@ -307,6 +307,7 @@ string_ge:                              # @string_ge
     .type	__lib_array_size,@function
 __lib_array_size:
 .__lib_array_size_.0:
+    	addi a0, a0, 0
     	lw a0, 0(a0)
     	ret
 	.type	.L.str,@object          # @.str

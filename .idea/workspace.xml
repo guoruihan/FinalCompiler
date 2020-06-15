@@ -4,19 +4,25 @@
     <list default="true" id="3de38f0f-e8b3-4a5b-9477-cb3cc979aa4c" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalCompiler/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/FinalCompiler/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/FinalCompiler/src/Mxstar/Mxstar.java" beforeDir="false" afterPath="$PROJECT_DIR$/FinalCompiler/src/Mxstar/Mxstar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Mxstar/IR/BuildIR.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Mxstar/IR/BuildIR.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Mxstar/IR/Func.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Mxstar/IR/Func.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Mxstar/IR/PrintIR.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Mxstar/IR/PrintIR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/bin/Mxstar/Mxstar.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Mxstar/Mxstar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/BuildIR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/BuildIR.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Func.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Func.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/PrintIR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/PrintIR.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Mxstar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Mxstar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/file.in" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/file.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ravel.out" beforeDir="false" afterPath="$PROJECT_DIR$/ravel.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/BuildIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/BuildIR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/Func.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/Func.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/PrintIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/PrintIR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/Mxstar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/Mxstar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/file.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/file.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.out" beforeDir="false" afterPath="$PROJECT_DIR$/test.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.s" beforeDir="false" afterPath="$PROJECT_DIR$/test.s" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +81,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592204875668</updated>
-      <workItem from="1592204880380" duration="12315000" />
+      <workItem from="1592204880380" duration="13459000" />
     </task>
     <servers />
   </component>

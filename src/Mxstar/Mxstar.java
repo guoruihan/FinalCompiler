@@ -131,15 +131,15 @@ public class Mxstar {
         BuildStack stackFrameBuilder = new BuildStack(irProgram);
         stackFrameBuilder.run();
 
-      /*  String output_path = "C:\\Users\\86186\\Desktop\\FinalSubmit\\ForRavel\\output.s";
+        String output_path = "output.s";
         PrintStream ps = new PrintStream(output_path);
-        System.setOut(ps);*/
+        System.setOut(ps);
+
 
         irPrinter = new PrintIR();
         PrintIR.showNasm = true;
         irPrinter.stringBuilder = new StringBuilder();
         irPrinter.visit(irProgram);
-        PrintStream printStream = new PrintStream("mx.asm");
         irPrinter.printTo(System.out);
     }
 }

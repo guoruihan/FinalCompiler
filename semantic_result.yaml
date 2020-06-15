@@ -1,0 +1,3852 @@
+- {case: ./basic-package/basic-25.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.322:(2,4):left val not able to modify
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-40.mx, stage: semantic, stderr: 'There are in total
+    2 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(2,4):mismatched input ''void'' expecting
+    {''('', ''{'', ''}'', '';'', ''++'', ''--'', ''+'', ''-'', ''~'', ''!'', ''bool'',
+    ''int'', ''string'', ''if'', ''for'', ''while'', ''break'', ''continue'', ''return'',
+    ''new'', ''this'', Integer_Literal, NULL_Literal, String_Literal, Bool_Literal,
+    Identifier}
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(2,8):mismatched input ''['' expecting
+    Identifier
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-11.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-50.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.249:(13,10):this is not a class
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-4.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.370:(0,0):there are some problem with the main
+    function.
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-64.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-35.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.349:(4,0):Name confliction with class
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-15.mx, stage: semantic, stderr: 'There are in total
+    2 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.319:(2,4):assignment different type
+
+    Mxstar.FrontEnd.SemanticChecker.322:(2,4):left val not able to modify
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-44.mx, stage: semantic, stderr: '', stdout: 'int
+
+    ', verdict: Accepted}
+- {case: ./basic-package/basic-70.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.AstBuild.319:(2,22):can not resolve this new creator
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-21.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.303:(9,8):type error occured
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-31.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.322:(2,4):left val not able to modify
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-60.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-54.mx, stage: semantic, stderr: 'There are in total
+    2 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.488:(4,10):there is no this type
+
+    Mxstar.FrontEnd.SymbolTableBuilder.231:(4,10):cannot resolve the type
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-14.mx, stage: semantic, stderr: 'There are in total
+    3 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.488:(2,4):there is no this type
+
+    Mxstar.FrontEnd.SymbolTableBuilder.488:(2,14):there is no this type
+
+    Mxstar.FrontEnd.SymbolTableBuilder.231:(2,14):cannot resolve the type
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-45.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(2,8):mismatched input ''void'' expecting
+    {''bool'', ''int'', ''string'', Identifier}
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-71.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    ', verdict: Accepted}
+- {case: ./basic-package/basic-20.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.402:(5,4):variable already defined
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-30.mx, stage: semantic, stderr: 'There are in total
+    2 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.319:(14,4):assignment different type
+
+    Mxstar.FrontEnd.SemanticChecker.322:(14,4):left val not able to modify
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-61.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(2,0):missing '';'' at ''int''
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-55.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-1.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-24.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.349:(3,8):they should be in the same type!
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-41.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-10.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    ', verdict: Accepted}
+- {case: ./basic-package/basic-51.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.144:(3,8):cannot resolve variable
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-5.mx, stage: semantic, stderr: 'There are in total
+    3 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(3,1):extraneous input ''void'' expecting
+    {''('', ''{'', ''}'', '';'', ''++'', ''--'', ''+'', ''-'', ''~'', ''!'', ''bool'',
+    ''int'', ''string'', ''if'', ''for'', ''while'', ''break'', ''continue'', ''return'',
+    ''new'', ''this'', Integer_Literal, NULL_Literal, String_Literal, Bool_Literal,
+    Identifier}
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(4,1):extraneous input ''void'' expecting
+    {''('', ''{'', ''}'', '';'', ''++'', ''--'', ''+'', ''-'', ''~'', ''!'', ''bool'',
+    ''int'', ''string'', ''if'', ''for'', ''while'', ''break'', ''continue'', ''return'',
+    ''new'', ''this'', Integer_Literal, NULL_Literal, String_Literal, Bool_Literal,
+    Identifier}
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(4,7):mismatched input '';'' expecting
+    {'';'', ''='', ''['', ''.'', ''++'', ''--'', ''+'', ''-'', ''*'', ''/'', ''%'',
+    ''>>'', ''<<'', ''<='', ''>='', ''<'', ''>'', ''=='', ''!='', ''&'', ''^'', ''|'',
+    ''&&'', ''||'', ''?''}
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-65.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-34.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.402:(2,11):variable already defined
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-46.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(10,4):extraneous input ''void''
+    expecting {''('', ''{'', ''}'', '';'', ''++'', ''--'', ''+'', ''-'', ''~'', ''!'',
+    ''bool'', ''int'', ''string'', ''if'', ''for'', ''while'', ''break'', ''continue'',
+    ''return'', ''new'', ''this'', Integer_Literal, NULL_Literal, String_Literal,
+    Bool_Literal, Identifier}
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-17.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-23.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(2,4):extraneous input ''void'' expecting
+    {''('', ''{'', ''}'', '';'', ''++'', ''--'', ''+'', ''-'', ''~'', ''!'', ''bool'',
+    ''int'', ''string'', ''if'', ''for'', ''while'', ''break'', ''continue'', ''return'',
+    ''new'', ''this'', Integer_Literal, NULL_Literal, String_Literal, Bool_Literal,
+    Identifier}
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-62.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-33.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.144:(6,12):cannot resolve variable
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-2.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-56.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./basic-package/basic-27.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.331:(5,0):name confliction
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-13.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.375:(0,0):the main should has return value with
+    integer.
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-42.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.349:(9,0):Name confliction with class
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-6.mx, stage: semantic, stderr: 'There are in total
+    2 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.319:(7,2):assignment different type
+
+    Mxstar.FrontEnd.SemanticChecker.319:(10,1):assignment different type
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-52.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.319:(8,2):assignment different type
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-37.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.319:(7,4):assignment different type
+
+    ', stdout: 'int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./basic-package/basic-66.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-26.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.189:(12,4):the parameter type does not match
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-12.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.101:(3,1):we cannot return a value
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-43.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.379:(0,0):the main should not have any parameters.
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-7.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.112:(15,1):the return type does not match
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-53.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./basic-package/basic-36.mx, stage: semantic, stderr: 'There are in total
+    3 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(19,227):mismatched input '']'' expecting
+    {''('', ''++'', ''--'', ''+'', ''-'', ''~'', ''!'', ''new'', ''this'', Integer_Literal,
+    NULL_Literal, String_Literal, Bool_Literal, Identifier}
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(19,229):mismatched input '']'' expecting
+    {''('', ''++'', ''--'', ''+'', ''-'', ''~'', ''!'', ''new'', ''this'', Integer_Literal,
+    NULL_Literal, String_Literal, Bool_Literal, Identifier}
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(19,231):mismatched input '']'' expecting
+    {''('', ''++'', ''--'', ''+'', ''-'', ''~'', ''!'', ''new'', ''this'', Integer_Literal,
+    NULL_Literal, String_Literal, Bool_Literal, Identifier}
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-67.mx, stage: semantic, stderr: 'There are in total
+    5 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.265:(4,12):Error! This can not be modified
+
+    Mxstar.FrontEnd.SemanticChecker.265:(4,9):Error! This can not be modified
+
+    Mxstar.FrontEnd.SemanticChecker.265:(4,7):Error! This can not be modified
+
+    Mxstar.FrontEnd.SemanticChecker.265:(4,4):Error! This can not be modified
+
+    Mxstar.FrontEnd.SemanticChecker.265:(5,4):Error! This can not be modified
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-47.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-16.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.402:(3,9):variable already defined
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-22.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.195:(3,12):This is not a array type
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-63.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-32.mx, stage: semantic, stderr: 'There are in total
+    2 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.303:(2,8):type error occured
+
+    Mxstar.FrontEnd.SemanticChecker.121:(2,4):the condition expression should be boolean
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-3.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./basic-package/basic-57.mx, stage: semantic, stderr: 'There are in total
+    4 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(2,4):missing ''{'' at ''int''
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(3,4):token recognition error at:
+    ''"I think I forget some thing...;\n''
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(4,4):missing '';'' at ''print''
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(5,0):missing '';'' at ''}''
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-29.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.319:(10,4):assignment different type
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-68.mx, stage: semantic, stderr: 'There are in total
+    7 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(18,12):extraneous input ''('' expecting
+    Identifier
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(18,16):mismatched input '')'' expecting
+    {'';'', ''='', ''['', ''.'', ''++'', ''--'', ''+'', ''-'', ''*'', ''/'', ''%'',
+    ''>>'', ''<<'', ''<='', ''>='', ''<'', ''>'', ''=='', ''!='', ''&'', ''^'', ''|'',
+    ''&&'', ''||'', ''?''}
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(21,8):extraneous input ''('' expecting
+    Identifier
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(21,16):extraneous input '')'' expecting
+    '';''
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(22,12):extraneous input ''('' expecting
+    Identifier
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(22,16):extraneous input '')'' expecting
+    '';''
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(37,1):missing '';'' at ''<EOF>''
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-39.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.144:(7,0):cannot resolve variable
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-8.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(3,10):mismatched input ''this''
+    expecting Identifier
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-19.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.112:(7,20):the return type does not match
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-48.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(7,1):missing '';'' at ''<EOF>''
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-58.mx, stage: semantic, stderr: 'There are in total
+    2 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.488:(6,14):there is no this type
+
+    Mxstar.FrontEnd.SymbolTableBuilder.231:(6,14):cannot resolve the type
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-18.mx, stage: semantic, stderr: '', stdout: 'int
+
+    ', verdict: Accepted}
+- {case: ./basic-package/basic-49.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-59.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-28.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-69.mx, stage: semantic, stderr: '', stdout: 'int
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./basic-package/basic-38.mx, stage: semantic, stderr: 'There are in total
+    2 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(1,6):mismatched input ''int'' expecting
+    Identifier
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(4,0):extraneous input ''}'' expecting
+    {<EOF>, ''bool'', ''int'', ''string'', ''void'', ''class'', Identifier}
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./basic-package/basic-9.mx, stage: semantic, stderr: 'There are in total
+    2 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.144:(3,1):cannot resolve variable
+
+    Mxstar.FrontEnd.SymbolTableBuilder.144:(4,8):cannot resolve variable
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./builtin-func-package/builtin-4.mx, stage: semantic, stderr: 'There are
+    in total 1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.272:(7,4):don''t have such method
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./builtin-func-package/builtin-1.mx, stage: semantic, stderr: '', stdout: 'int
+
+    ', verdict: Accepted}
+- {case: ./builtin-func-package/builtin-2.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    ', verdict: Accepted}
+- {case: ./builtin-func-package/builtin-3.mx, stage: semantic, stderr: 'There are
+    in total 1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.272:(7,4):don''t have such method
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./if-package/if-3.mx, stage: semantic, stderr: 'There are in total 1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.121:(6,4):the condition expression should be boolean
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./if-package/if-2.mx, stage: semantic, stderr: 'There are in total 1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.121:(6,4):the condition expression should be boolean
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./if-package/if-1.mx, stage: semantic, stderr: 'There are in total 1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.121:(4,1):the condition expression should be boolean
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./codeforces-package/122A.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./codeforces-package/1A.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./codeforces-package/231A.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./codeforces-package/69A.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./codeforces-package/4A.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./codeforces-package/399A.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./codeforces-package/158A.mx, stage: semantic, stderr: '', stdout: 'int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./codeforces-package/71A.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./codeforces-package/1145A.mx, stage: semantic, stderr: '', stdout: 'int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./codeforces-package/263A.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./breakcontinue-package/breakcontinue-3.mx, stage: semantic, stderr: '',
+  stdout: '', verdict: Accepted}
+- {case: ./breakcontinue-package/breakcontinue-2.mx, stage: semantic, stderr: 'There
+    are in total 1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.94:(4,4):here is not in a loop!
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./breakcontinue-package/breakcontinue-1.mx, stage: semantic, stderr: 'There
+    are in total 1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.94:(4,4):here is not in a loop!
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./breakcontinue-package/breakcontinue-5.mx, stage: semantic, stderr: 'There
+    are in total 1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.94:(6,4):here is not in a loop!
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./breakcontinue-package/breakcontinue-4.mx, stage: semantic, stderr: 'There
+    are in total 1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.94:(3,4):here is not in a loop!
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./expression-package/expression-5.mx, stage: semantic, stderr: 'There are
+    in total 1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.263:(3,4):type error occured
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./expression-package/expression-1.mx, stage: semantic, stderr: 'There are
+    in total 1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.265:(3,4):Error! This can not be modified
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./expression-package/expression-4.mx, stage: semantic, stderr: 'There are
+    in total 1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.322:(16,4):left val not able to modify
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./expression-package/expression-3.mx, stage: semantic, stderr: '', stdout: '',
+  verdict: Accepted}
+- {case: ./expression-package/expression-2.mx, stage: semantic, stderr: '', stdout: '',
+  verdict: Accepted}
+- {case: ./array-package/array-7.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./array-package/array-3.mx, stage: semantic, stderr: 'There are in total
+    2 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.195:(10,3):This is not a array type
+
+    Mxstar.FrontEnd.SymbolTableBuilder.195:(20,23):This is not a array type
+
+    ', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    ', verdict: Accepted}
+- {case: ./array-package/array-2.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./array-package/array-6.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.319:(5,4):assignment different type
+
+    ', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    ', verdict: Accepted}
+- {case: ./array-package/array-9.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    ', verdict: Accepted}
+- {case: ./array-package/array-8.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.189:(5,12):index must be integer
+
+    ', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    ', verdict: Accepted}
+- {case: ./array-package/array-1.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./array-package/array-11.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.AstBuild.319:(3,22):can not resolve this new creator
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./array-package/array-5.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    ', verdict: Accepted}
+- {case: ./array-package/array-4.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.AstBuild.319:(2,18):can not resolve this new creator
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./array-package/array-10.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.217:(3,18):index must be integer
+
+    ', stdout: 'bool
+
+    ', verdict: Accepted}
+- {case: ./loop-package/loop-3.mx, stage: semantic, stderr: 'There are in total 1
+    errors:
+
+    Mxstar.FrontEnd.SemanticChecker.77:null:the condition should be a boolean experssion.
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./loop-package/loop-2.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./loop-package/loop-1.mx, stage: semantic, stderr: 'There are in total 1
+    errors:
+
+    Mxstar.FrontEnd.SemanticChecker.77:null:the condition should be a boolean experssion.
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./string-package/string-1.mx, stage: semantic, stderr: '', stdout: 'int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./symbol-package/symbol-7.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(2,4):no viable alternative at input
+    ''intthis''
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./symbol-package/symbol-3.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(3,8):mismatched input ''123'' expecting
+    {''['', Identifier}
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./symbol-package/symbol-2.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(3,8):token recognition error at:
+    ''_''
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./symbol-package/symbol-6.mx, stage: semantic, stderr: 'There are in total
+    2 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(3,9):mismatched input ''this'' expecting
+    Identifier
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(6,0):extraneous input ''}'' expecting
+    '';''
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./symbol-package/symbol-1.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    ', verdict: Accepted}
+- {case: ./symbol-package/symbol-5.mx, stage: semantic, stderr: 'There are in total
+    3 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(3,8):mismatched input ''int'' expecting
+    {''['', Identifier}
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(4,8):mismatched input ''bool'' expecting
+    {''['', Identifier}
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(5,9):mismatched input ''class''
+    expecting {''['', Identifier}
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./symbol-package/symbol-4.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.402:(4,8):variable already defined
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./function-package/function-3.mx, stage: semantic, stderr: 'There are in
+    total 1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.203:(15,4):can not find the function you want
+    here
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./function-package/function-2.mx, stage: semantic, stderr: 'There are in
+    total 1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.488:(8,0):there is no this type
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./function-package/function-6.mx, stage: semantic, stderr: 'There are in
+    total 8 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(3,8):token recognition error at:
+    ''_''
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(4,8):token recognition error at:
+    ''_''
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(4,9):token recognition error at:
+    ''_''
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(5,8):token recognition error at:
+    ''_''
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(5,9):token recognition error at:
+    ''_''
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(5,10):token recognition error at:
+    ''_''
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(5,11):token recognition error at:
+    ''_''
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(3,9):no viable alternative at input
+    ''int;''
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./function-package/function-1.mx, stage: semantic, stderr: 'There are in
+    total 1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.183:(8,8):there is not enough parameters
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./function-package/function-5.mx, stage: semantic, stderr: 'There are in
+    total 2 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.112:(7,4):the return type does not match
+
+    Mxstar.FrontEnd.SemanticChecker.349:(12,10):they should be in the same type!
+
+    ', stdout: 'int
+
+    ', verdict: Accepted}
+- {case: ./function-package/function-4.mx, stage: semantic, stderr: '', stdout: 'int
+
+    ', verdict: Accepted}
+- {case: ./class-package/class-5.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./class-package/class-1.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./class-package/class-4.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(11,0):missing '';'' at ''int''
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./class-package/class-15.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./class-package/class-11.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./class-package/class-10.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.283:(7,4):don''t have such component
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./class-package/class-14.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.AstBuild.432:(4,4):there shouldn''t have return val in construction
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./class-package/class-9.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    ', verdict: Accepted}
+- {case: ./class-package/class-13.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./class-package/class-16.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.AstBuild.439:(3,4):construct definition without a same name
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./class-package/class-8.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.101:(5,8):we cannot return a value
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./class-package/class-12.mx, stage: semantic, stderr: 'There are in total
+    2 errors:
+
+    Mxstar.FrontEnd.AstBuild.439:(2,2):construct definition without a same name
+
+    Mxstar.FrontEnd.AstBuild.439:(6,2):construct definition without a same name
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./class-package/class-3.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./class-package/class-7.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./class-package/class-6.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./class-package/class-2.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-3.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-29.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-7.mx, stage: semantic, stderr: '', stdout: 'int
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-19.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-6.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-18.mx, stage: semantic, stderr: '', stdout: 'int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-2.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-28.mx, stage: semantic, stderr: '', stdout: 'int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-23.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-17.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-9.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./misc-package/misc-33.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-13.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-27.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-37.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./misc-package/misc-12.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-26.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./misc-package/misc-36.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-22.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-16.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-8.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./misc-package/misc-32.mx, stage: semantic, stderr: 'There are in total 1
+    errors:
+
+    Mxstar.ErrorProcessor.ParserErrorListener.14:(52,24):extraneous input ''>'' expecting
+    {''('', ''++'', ''--'', ''+'', ''-'', ''~'', ''!'', ''new'', ''this'', Integer_Literal,
+    NULL_Literal, String_Literal, Bool_Literal, Identifier}
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./misc-package/misc-11.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-25.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-35.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./misc-package/misc-21.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./misc-package/misc-15.mx, stage: semantic, stderr: 'There are in total 6
+    errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.195:(28,31):This is not a array type
+
+    Mxstar.FrontEnd.SymbolTableBuilder.195:(28,49):This is not a array type
+
+    Mxstar.FrontEnd.SymbolTableBuilder.195:(30,16):This is not a array type
+
+    Mxstar.FrontEnd.SymbolTableBuilder.195:(31,16):This is not a array type
+
+    Mxstar.FrontEnd.SymbolTableBuilder.195:(35,16):This is not a array type
+
+    Mxstar.FrontEnd.SymbolTableBuilder.195:(36,16):This is not a array type
+
+    ', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-31.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-20.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./misc-package/misc-14.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-30.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-10.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-24.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-34.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-5.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-1.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    int
+
+    int
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    mew0
+
+    ', verdict: Accepted}
+- {case: ./misc-package/misc-4.mx, stage: semantic, stderr: '', stdout: 'int
+
+    int
+
+    ', verdict: Accepted}
+- {case: ./scope-package/scope-3.mx, stage: semantic, stderr: 'There are in total
+    2 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.144:(3,8):cannot resolve variable
+
+    Mxstar.FrontEnd.SymbolTableBuilder.144:(8,8):cannot resolve variable
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./scope-package/scope-7.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./scope-package/scope-6.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./scope-package/scope-2.mx, stage: semantic, stderr: '', stdout: 'int
+
+    ', verdict: Accepted}
+- {case: ./scope-package/scope-8.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./scope-package/scope-5.mx, stage: semantic, stderr: 'There are in total
+    1 errors:
+
+    Mxstar.FrontEnd.SemanticChecker.319:(12,0):assignment different type
+
+    ', stdout: '', verdict: Accepted}
+- {case: ./scope-package/scope-1.mx, stage: semantic, stderr: '', stdout: '', verdict: Accepted}
+- {case: ./scope-package/scope-4.mx, stage: semantic, stderr: 'There are in total
+    3 errors:
+
+    Mxstar.FrontEnd.SymbolTableBuilder.144:(3,8):cannot resolve variable
+
+    Mxstar.FrontEnd.SymbolTableBuilder.144:(9,8):cannot resolve variable
+
+    Mxstar.FrontEnd.SymbolTableBuilder.144:(15,8):cannot resolve variable
+
+    ', stdout: '', verdict: Accepted}

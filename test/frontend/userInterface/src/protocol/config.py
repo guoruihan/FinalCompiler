@@ -1,0 +1,12 @@
+class PathConfig:
+    basePath = 'http://127.0.0.1:43010/'
+    registerPath = basePath + 'addUser'
+    requestJudgePath = basePath + 'requestJudge'
+    getUserListPath = basePath + 'fetchRepoWeb'
+    loginPath = basePath + 'loginUser'
+    submitTaskPath = basePath + 'submitTask'
+    fetchUuidPath = basePath + 'queryID'
+    fetchStatusPath = basePath + 'fetchStatus'
+    fetchStatusBrief = basePath + 'getStatusBrief'
+    fetchJudgeResultDetail = basePath + 'getStatusDetail'
+    fetchServerStatus = basePath + 'fetchServerStatus'

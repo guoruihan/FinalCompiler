@@ -1,0 +1,11 @@
+buildlimit: 10
+instlimit: -1
+memlimit: 512
+path:
+  compiler: /mnt/c/Users/86186/Desktop/Cp
+  dataset: /mnt/c/Users/86186/Desktop/Cp/testcase
+  simulator: /Users/peterzheng/ravel/build/bin
+  simulator-executable: /Users/peterzheng/ravel/build/bin/ravel
+  built-in: /Users/peterzheng/Documents/Projects/OldProject/Compiler/localJudge/built-in.s
+stage: semantic
+timelimit: 15

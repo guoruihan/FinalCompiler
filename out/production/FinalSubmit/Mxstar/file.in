@@ -1,0 +1,31 @@
+int n;
+int m;
+EdgeList g;
+int INF = 10000000;
+
+int[] dijkstra(int s) {
+  int[] visited = new int[n];
+  int[] d = new int[n];
+  int i;
+  for (i = 0; i < n; ++i) {
+    d[i] = INF;
+    visited[i] = 0;
+  }
+  d[s] = 0;
+
+
+  return d;
+}
+
+
+
+int main() {
+  init();
+  int i;
+  int j;
+  for (i = 0; i < n; ++i) {
+    int[] d = dijkstra(i);
+  }
+
+  return 0;
+}

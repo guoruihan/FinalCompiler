@@ -71,7 +71,7 @@ public class Liveness {
         boolean changed = true;
         while(changed) {
             changed = false;
-            for (BB bb: func.reversePostOrderOnCFG) {
+            for (BB bb: func.reverseOnCFG) {
                 int oldSize = liveOut.get(bb).size();
                 for (BB succ: bb.successers) {
                     HashSet<VirtualReg> regs = new HashSet<>(liveOut.get(succ));

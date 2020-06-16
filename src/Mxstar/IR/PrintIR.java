@@ -198,13 +198,6 @@ public class PrintIR implements IRVisitor {
 
         if (showNasm) {
             stringBuilder.append(getNasmFuncName(func) + ":\n");
-        } else {
-            stringBuilder.append("define " + getNasmFuncName(func) + " (");
-            for (VirtualReg virReg: func.parameters) {
-                virReg.accept(this);
-                stringBuilder.append(",");
-            }
-            stringBuilder.append(")\n");
         }
         //System.err.println(func.reversePostOrder.size());
         ArrayList<BB> reversePostOrder = new ArrayList<>(func.reversePostOrder);
@@ -218,8 +211,6 @@ public class PrintIR implements IRVisitor {
 
             bb.accept(this);
         }
-        if (!showNasm)
-            stringBuilder.append("}\n");
     }
 
     @Override

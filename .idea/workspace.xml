@@ -128,7 +128,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/BinaryInst$BinaryOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/BinaryInst$BinaryOp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/BinaryInst.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/BinaryInst.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Call.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Call.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cdq.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cdq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cdq.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cjump$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cjump$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cjump$CompareOP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cjump$CompareOP.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cjump.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cjump.class" afterDir="false" />
@@ -236,6 +236,7 @@
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarVisitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ravel.out" beforeDir="false" afterPath="$PROJECT_DIR$/ravel.out" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/Configuration.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/Configuration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/FrontEnd/AstBuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/FrontEnd/AstBuild.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/BuildIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/BuildIR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/CorrectIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/CorrectIR.java" afterDir="false" />
@@ -252,6 +253,7 @@
       <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/Elimination.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/GraphAllo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/Optimize/GraphAllo.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/LVN.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/Liveness.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/Optimize/Liveness.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/ProcessDead.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/SVN.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/SVNTable.java" beforeDir="false" />
@@ -325,7 +327,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592204875668</updated>
-      <workItem from="1592204880380" duration="37168000" />
+      <workItem from="1592204880380" duration="40983000" />
     </task>
     <servers />
   </component>
@@ -349,22 +351,22 @@
       <screen x="0" y="0" width="1463" height="783" />
     </state>
     <state x="495" y="194" key="FileChooserDialogImpl/0.0.1463.783@0.0.1463.783" timestamp="1592215991697" />
-    <state width="1420" height="398" key="GridCell.Tab.0.bottom" timestamp="1592291045033">
+    <state width="1420" height="15" key="GridCell.Tab.0.bottom" timestamp="1592295974188">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="398" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1592291045033" />
-    <state width="1420" height="398" key="GridCell.Tab.0.center" timestamp="1592291045033">
+    <state width="1420" height="15" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1592295974188" />
+    <state width="1420" height="15" key="GridCell.Tab.0.center" timestamp="1592295974188">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="398" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1592291045033" />
-    <state width="1420" height="398" key="GridCell.Tab.0.left" timestamp="1592291045032">
+    <state width="1420" height="15" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1592295974188" />
+    <state width="1420" height="15" key="GridCell.Tab.0.left" timestamp="1592295974188">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="398" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1592291045032" />
-    <state width="1420" height="398" key="GridCell.Tab.0.right" timestamp="1592291045033">
+    <state width="1420" height="15" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1592295974188" />
+    <state width="1420" height="15" key="GridCell.Tab.0.right" timestamp="1592295974188">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="398" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1592291045033" />
+    <state width="1420" height="15" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1592295974188" />
     <state width="1420" height="256" key="GridCell.Tab.1.bottom" timestamp="1592270054436">
       <screen x="0" y="0" width="1463" height="783" />
     </state>

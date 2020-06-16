@@ -15,26 +15,28 @@ public class Func {
     }
 
     public Type type;
-    public String name;
-    public boolean hasReturnValue;
-    public boolean hasOutput;
     public BB enterBB;
     public BB leaveBB;
+    public String name;
     public LinkedList<BB> basicblocks;
     public LinkedList<BB> reversePostOrder;
-    public LinkedList<BB> reversePostOrderOnCFG;
-    public LinkedList<VirtualReg> parameters;
+    public LinkedList<BB> reverseOnCFG;
 
-    public HashSet<VarSymbol> Global;
-    public HashSet<VarSymbol> recursiveGlobal;
     public HashSet<PhysicalReg> usedPhysicalRegister;
     public HashSet<PhysicalReg> recursiveUsedPhysicalRegister;
 
     public HashSet<Func> callee;
-
-    public HashSet<BB> visitedBB;
+    public HashSet<Func> caller;//userless
     public HashSet<Func> visitedFunc;
+    public HashSet<BB> visitedBB;
 
+
+    public LinkedList<VirtualReg> parameters;
+    public HashSet<VarSymbol> Global;
+    public HashSet<VarSymbol> recursiveGlobal;
+
+    public boolean hasReturnValue;
+    public boolean hasOutput;
 
     public Func(Type type, String name, boolean HasReturnValue) {
         this.type = type;
@@ -43,7 +45,7 @@ public class Func {
         this.hasOutput = false;
         this.basicblocks = new LinkedList<>();
         this.reversePostOrder = new LinkedList<>();
-        this.reversePostOrderOnCFG = new LinkedList<>();
+        this.reverseOnCFG = new LinkedList<>();
         this.parameters = new LinkedList<>();
         this.Global = new HashSet<>();
         this.recursiveGlobal = new HashSet<>();
@@ -55,29 +57,29 @@ public class Func {
 
         if (type != Type.UserDefined && !name.equals("initabcd")) {
             for (PhysicalReg pr : Regs.allRegs) {
-                if (pr.name.equals("zero") || pr.name.equals("sp") || pr.name.equals("gp") || pr.name.equals("tp") || pr.name.equals("t0") || pr.name.equals("t1") || pr.name.equals("t2") || pr.name.equals("ra")||pr.name.equals("t4"))
+                if (pr.name.equals("zero") || pr.name.equals("sp") || pr.name.equals("gp") || pr.name.equals("tp") || pr.name.equals("t0") || pr.name.equals("t1") || pr.name.equals("t2") || pr.name.equals("ra")||pr.name.equals("t4")|| pr.name.equals("gp"))
                     continue;
-                this.usedPhysicalRegister.add(pr);
                 this.recursiveUsedPhysicalRegister.add(pr);
+                this.usedPhysicalRegister.add(pr);
             }
         }
     }
 
     public Func(String name, boolean HasReturnValue) {
-        this.type = Type.Library;
-        this.name = name;
+        this.usedPhysicalRegister = new HashSet<>();
+        this.parameters = new LinkedList<>();
         this.hasReturnValue = HasReturnValue;
         this.hasOutput = false;
-        this.basicblocks = new LinkedList<>();
-        this.reversePostOrder = new LinkedList<>();
-        this.reversePostOrderOnCFG = new LinkedList<>();
-        this.parameters = new LinkedList<>();
         this.Global = new HashSet<>();
         this.recursiveGlobal = new HashSet<>();
-        this.usedPhysicalRegister = new HashSet<>();
         this.recursiveUsedPhysicalRegister = new HashSet<>();
         this.callee = new HashSet<>();
         this.visitedBB = new HashSet<>();
+        this.type = Type.Library;
+        this.basicblocks = new LinkedList<>();
+        this.reversePostOrder = new LinkedList<>();
+        this.reverseOnCFG = new LinkedList<>();
+        this.name = name;
         this.visitedFunc = new HashSet<>();
 
         if (!name.equals("init")) {
@@ -90,22 +92,22 @@ public class Func {
         }
     }
 
-    public void dfsReversePostOrder(BB node) {
+    public void dfsRev(BB node) {
         if (visitedBB.contains(node))
             return ;
         visitedBB.add(node);
         for (BB bb: node.successers)
-            dfsReversePostOrder(bb);
+            dfsRev(bb);
         reversePostOrder.addFirst(node);
     }
 
-    public void dfsReversePostOrderOnReversedCFG(BB node) {
+    public void dfsRevOnRevCFG(BB node) {
         if (visitedBB.contains(node))
             return ;
         visitedBB.add(node);
         for (BB bb: node.frontiers)
-            dfsReversePostOrderOnReversedCFG(bb);
-        reversePostOrderOnCFG.addFirst(node);
+            dfsRevOnRevCFG(bb);
+        reverseOnCFG.addFirst(node);
     }
 
     public void dfsRecursiveUsedGlobalVariables(Func node) {
@@ -149,11 +151,11 @@ public class Func {
         }//把大的那块放到前面（是优化
         visitedBB.clear();
         reversePostOrder.clear();
-        dfsReversePostOrder(enterBB);
+        dfsRev(enterBB);
 
         visitedBB.clear();
-        reversePostOrderOnCFG.clear();
-        dfsReversePostOrderOnReversedCFG(leaveBB);
+        reverseOnCFG.clear();
+        dfsRevOnRevCFG(leaveBB);
 
         visitedFunc.clear();
         recursiveGlobal.clear();
@@ -182,29 +184,31 @@ public class Func {
         return op == BinaryInst.BinaryOp.MUL || op == BinaryInst.BinaryOp.DIV || op == BinaryInst.BinaryOp.REM;
     }
 
+    boolean isCall(Inst inst){
+        return inst instanceof Call;
+    }
+    boolean isBin(Inst inst){
+        return inst instanceof BinaryInst;
+    }
+
     public void finishAllocate() {
+        boolean rettag = false;
         for (BB bb: basicblocks) {
             for (Inst inst = bb.head; inst != null;  inst = inst.next) {
                 if (inst instanceof Return)
+                    rettag = true;
+                if(rettag)
                     return;
-                if (inst instanceof Call) {
+                if (isCall(inst)) {
                     usedPhysicalRegister.addAll(Regs.callerSave);
-                } else if (inst instanceof BinaryInst && isSpecialBinaryaryOp(((BinaryInst)inst).op)) {
+                } else if (!(isBin(inst) && isSpecialBinaryaryOp(((BinaryInst)inst).op))) {
+                    usedPhysicalRegister.addAll(trans(inst.getUseRegs()));
+                    usedPhysicalRegister.addAll(trans(inst.getDefRegs()));
+                } else {
                     usedPhysicalRegister.add(Regs.a0);
                     usedPhysicalRegister.add(Regs.t5);
                     if (((BinaryInst)inst).val instanceof Register)
                         usedPhysicalRegister.add((PhysicalReg)(((BinaryInst)inst).val));
-                } else /*if (inst instanceof Setcc) {
-                    usedPhysicalRegister.add(Regs.a0);
-                    if (((Setcc)inst).val1 instanceof Register)
-                        usedPhysicalRegister.add((PhysicalReg)(((Setcc)inst).val1));
-                    if (((Setcc)inst).val2 instanceof Register)
-                        usedPhysicalRegister.add((PhysicalReg)(((Setcc)inst).val2));
-                    if (((Setcc)inst).tpos instanceof Register)
-                        usedPhysicalRegister.add((PhysicalReg)(((Setcc)inst).tpos));
-                } else */{
-                    usedPhysicalRegister.addAll(trans(inst.getUseRegs()));
-                    usedPhysicalRegister.addAll(trans(inst.getDefRegs()));
                 }
             }
         }

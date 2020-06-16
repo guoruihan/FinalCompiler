@@ -23,10 +23,8 @@ public class GraphAllo {
         this.irProgram = irProgram;
         generalRegisters = new LinkedList<>();
         for (PhysicalReg pr : Regs.allRegs) {
-            if (pr.name.equals("zero") || pr.name.equals("sp") || pr.name.equals("s0") || pr.name.equals("tp") || pr.name.equals("t0") || pr.name.equals("t1") || pr.name.equals("t2") || pr.name.equals("ra")||pr.name.equals("t4"))
-            /*if (pr.name.equals("zero") || pr.name.equals("sp") || pr.name.equals("s0") || pr.name.equals("tp") || pr.name.equals("t0") || pr.name.equals("t1") || pr.name.equals("t2") || pr.name.equals("ra") ||
-                    pr.name.equals("a0") ||pr.name.equals("a1") ||pr.name.equals("a2") ||pr.name.equals("a3") ||pr.name.equals("a4") ||pr.name.equals("a5") ||pr.name.equals("a6")||pr.name.equals("a7")
-                    || pr.name.equals("t3")|| pr.name.equals("t4")|| pr.name.equals("t5")|| pr.name.equals("x5")|| pr.name.equals("x6")|| pr.name.equals("x7"))*/
+            //if (pr.name.equals("zero") || pr.name.equals("sp") || pr.name.equals("s0") || pr.name.equals("tp") || pr.name.equals("t0") || pr.name.equals("t1") || pr.name.equals("t2") || pr.name.equals("ra")||pr.name.equals("t4"))
+            if (pr.name.equals("zero") || pr.name.equals("sp") || pr.name.equals("s0") || pr.name.equals("tp") || pr.name.equals("t0") || pr.name.equals("t1") || pr.name.equals("t2") || pr.name.equals("ra") || pr.name.equals("gp") )
                 continue;
             //caller save 的存储有很大问题啊
             generalRegisters.add(pr);

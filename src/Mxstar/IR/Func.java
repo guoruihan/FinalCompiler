@@ -82,7 +82,7 @@ public class Func {
 
         if (!name.equals("init")) {
             for (PhysicalReg pr : Regs.allRegs) {
-                if (pr.name.equals("zero") || pr.name.equals("sp") || pr.name.equals("s0") || pr.name.equals("tp") || pr.name.equals("t0") || pr.name.equals("t1") || pr.name.equals("t2") || pr.name.equals("ra") )
+                if (pr.name.equals("zero") || pr.name.equals("sp") || pr.name.equals("s0") || pr.name.equals("tp") || pr.name.equals("t0") || pr.name.equals("t1") || pr.name.equals("t2") || pr.name.equals("ra") || pr.name.equals("gp"))
                     continue;
                 this.usedPhysicalRegister.add(pr);
                 this.recursiveUsedPhysicalRegister.add(pr);

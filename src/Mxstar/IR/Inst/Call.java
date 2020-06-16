@@ -44,13 +44,28 @@ public class Call extends Inst {
         return new Call(bb, tpos, nfunc, args);
     }
 
+    boolean isVirReg(Operand pos){
+        return pos instanceof VirtualReg;
+    }
+    boolean isReg(Operand pos){
+        return pos instanceof Register;
+    }
+    boolean isAllo(Operand pos){
+        return pos instanceof AlloSpace;
+    }
+
     public LinkedList<Register> getCallUsed() {
         LinkedList<Register> registers = new LinkedList<>();
         for (Operand operand: args) {
-            if (operand instanceof AlloSpace) {
-                registers.addAll(((AlloSpace)operand).getUseRegs());
-            } else if (operand instanceof VirtualReg){
+            if (isVirReg(operand)){
                 registers.add((Register)operand);
+            } else {
+                if (isAllo(operand)) {
+                    registers.addAll(((AlloSpace) operand).getUseRegs());
+                }
+                else {
+                    continue;
+                }
             }
         }
         return registers;
@@ -61,8 +76,10 @@ public class Call extends Inst {
 
     @Override
     public void renameDefReg(HashMap<Register, Register> renameMap) {
-        if (tpos instanceof Register && renameMap.containsKey(tpos)) {
-            tpos = renameMap.get(tpos);
+        if (isReg(tpos)) {
+            if(renameMap.containsKey((Register)tpos)) {
+                tpos = renameMap.get((Register)tpos);
+            }
         }
     }
 
@@ -79,7 +96,6 @@ public class Call extends Inst {
     @Override
     public LinkedList<Stack> getStackSlots() {
         LinkedList<Stack> slots = new LinkedList<>(defualtGetSlot(tpos));
-//        slots.addAll(defualtGetSlot(tpos));
         for (Operand op: args) {
             if (op instanceof Stack) {
                 slots.add((Stack)op);

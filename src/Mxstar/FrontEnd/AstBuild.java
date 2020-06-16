@@ -1,8 +1,6 @@
 package Mxstar.FrontEnd;
 
 import Mxstar.Ast.Statement.*;
-import Mxstar.IR.Inst.Cdq;
-import Mxstar.Symbol.*;
 import Parser.*;
 import Mxstar.ErrorProcessor.*;
 import Parser.MxstarParser.*;

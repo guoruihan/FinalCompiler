@@ -151,10 +151,6 @@ public class CorrectIR implements IRVisitor {
 
     }
 
-    @Override
-    public void visit(Cdq inst) {
-
-    }
 
     @Override
     public void visit(Li inst) {

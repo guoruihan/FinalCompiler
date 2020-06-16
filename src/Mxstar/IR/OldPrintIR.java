@@ -358,10 +358,6 @@ public class OldPrintIR implements IRVisitor {
         stringBuilder.append("\tret\n");
     }
 
-    @Override
-    public void visit(Cdq inst) {
-        stringBuilder.append("\tcdq\n");
-    }
 
     @Override
     public void visit(Li inst) {

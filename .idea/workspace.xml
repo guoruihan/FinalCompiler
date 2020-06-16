@@ -6,75 +6,6 @@
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Mxstar/Configuration$ALLOCATOR.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Mxstar/IR/Func$Type.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Mxstar/IR/Inst/BinaryInst$BinaryOp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Mxstar/IR/Inst/Cjump$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Mxstar/IR/Inst/Cjump$CompareOP.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Mxstar/IR/Inst/Setcc$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Mxstar/IR/Inst/UnaryInst$UnaryOp.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Mxstar/IR/OldPrintIR$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Mxstar/IR/PrintIR$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Mxstar/Mxstar$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Mxstar/Optimize/BuildStack$Frame.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Mxstar/Optimize/LVN$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Mxstar/Optimize/SVNTable$SVNKey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ArrayExprContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$AssignExprContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$BinaryExprContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$BlockContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$BlockStmtContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ClassDefContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ClassDefinitionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ConditionStatementContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ConditionStmtContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ConstructDefinitionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$CreatorContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$DeclarationsContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$DeclsContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$EmptyContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$EmptyStmtContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ExprContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ExprStmtContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ExpressionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ForExprContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$FuncDefContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$FunctionCallContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$FunctionDefinitionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$FuntionExprContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$InvalidCreaterContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$JumpStatementContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$JumpStmtContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$LoopStatementContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$LoopStmtContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$MemDeclContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$MemberDeclarationContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$MemberExprContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$NewExprContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ParaDeclContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ParaDeclListContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ParameterDeclarationContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ParameterDeclarationListContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$PrimaryExprContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ProgramContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$StatementContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$SubExprContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$UnaryExprContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$ValidCreaterContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$VarDeclContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$VarDefContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$VarListContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$VarType0Context.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$VarType1Context.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$VarType2Context.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$VariableDeclarationContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$VariableDefinitionContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$VariableListContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$VariableStmtContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$VariableTypeBasicContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$VariableTypeContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$VariableTypeOrVoidContext.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/FinalCompiler/bin/Parser/MxstarParser$WhileExprContext.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Mxstar/Configuration$ALLOCATOR.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Mxstar/IR/BuildIR.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Mxstar/IR/BuildIR.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Mxstar/IR/Func$Type.class" beforeDir="false" />
@@ -209,8 +140,8 @@
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Move.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Move.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Outstack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Outstack.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Return.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Return.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Setcc$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Setcc$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Setcc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Setcc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Setcc$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Setcc.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/UnaryInst$UnaryOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/UnaryInst$UnaryOp.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/UnaryInst.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/UnaryInst.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/OldPrintIR$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/OldPrintIR$1.class" afterDir="false" />
@@ -307,7 +238,14 @@
       <change beforePath="$PROJECT_DIR$/ravel.out" beforeDir="false" afterPath="$PROJECT_DIR$/ravel.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/FrontEnd/AstBuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/FrontEnd/AstBuild.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/BuildIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/BuildIR.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/CorrectIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/CorrectIR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/Func.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/Func.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/IRVisitor.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/IRVisitor.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/Inst/BinaryInst.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/Inst/BinaryInst.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/Inst/Call.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/Inst/Call.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/Inst/Cdq.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/Inst/Setcc.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/OldPrintIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/OldPrintIR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/PrintIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/PrintIR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/Mxstar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/Mxstar.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/BuildStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/BuildStack.java" afterDir="false" />
@@ -387,7 +325,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592204875668</updated>
-      <workItem from="1592204880380" duration="33243000" />
+      <workItem from="1592204880380" duration="37168000" />
     </task>
     <servers />
   </component>
@@ -411,22 +349,22 @@
       <screen x="0" y="0" width="1463" height="783" />
     </state>
     <state x="495" y="194" key="FileChooserDialogImpl/0.0.1463.783@0.0.1463.783" timestamp="1592215991697" />
-    <state width="1420" height="37" key="GridCell.Tab.0.bottom" timestamp="1592284285237">
+    <state width="1420" height="398" key="GridCell.Tab.0.bottom" timestamp="1592291045033">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="37" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1592284285237" />
-    <state width="1420" height="37" key="GridCell.Tab.0.center" timestamp="1592284285237">
+    <state width="1420" height="398" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1592291045033" />
+    <state width="1420" height="398" key="GridCell.Tab.0.center" timestamp="1592291045033">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="37" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1592284285237" />
-    <state width="1420" height="37" key="GridCell.Tab.0.left" timestamp="1592284285237">
+    <state width="1420" height="398" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1592291045033" />
+    <state width="1420" height="398" key="GridCell.Tab.0.left" timestamp="1592291045032">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="37" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1592284285237" />
-    <state width="1420" height="37" key="GridCell.Tab.0.right" timestamp="1592284285237">
+    <state width="1420" height="398" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1592291045032" />
+    <state width="1420" height="398" key="GridCell.Tab.0.right" timestamp="1592291045033">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="37" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1592284285237" />
+    <state width="1420" height="398" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1592291045033" />
     <state width="1420" height="256" key="GridCell.Tab.1.bottom" timestamp="1592270054436">
       <screen x="0" y="0" width="1463" height="783" />
     </state>

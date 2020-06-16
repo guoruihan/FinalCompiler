@@ -19,8 +19,6 @@ public interface IRVisitor {
     void visit(UnaryInst inst);
     void visit(Instack inst);
     void visit(Outstack inst);
-//    void visit(Setcc inst);
-    void visit(Cdq inst);
     void visit(Leave inst);
     void visit(IRProgram irProgram);
     void visit(AlloSpace operand);

@@ -27,42 +27,60 @@ public class BinaryInst extends Inst {
         return new BinaryInst(bb, op, tpos, val);
     }
 
+    boolean checkAllo(Operand pos){
+        return pos instanceof AlloSpace;
+    }
+
+    boolean checkReg(Operand pos){
+        return pos instanceof Register;
+    }
+
     @Override
     public void renameUseReg(HashMap<Register, Register> renameMap) {
-        if (val instanceof AlloSpace) {
-            val = ((AlloSpace)(val)).copy();
-            ((AlloSpace)(val)).renameUseRegs(renameMap);
-        } else if (val instanceof Register && renameMap.containsKey(val)) {
-            val = renameMap.get(val);
-        }
-
-        if (tpos instanceof AlloSpace) {
+        if (checkAllo(tpos)) {
             tpos = ((AlloSpace) tpos).copy();
             ((AlloSpace)tpos).renameUseRegs(renameMap);
-        } else if (tpos instanceof Register && renameMap.containsKey(tpos)) {
-            tpos = renameMap.get(tpos);
+        } else if (checkReg(tpos)) {
+            if(renameMap.containsKey((Register)tpos)) {
+                tpos = renameMap.get((Register)tpos);
+            }
         }
+
+        if (checkAllo(val)) {
+            val = ((AlloSpace)(val)).copy();
+            ((AlloSpace)val).renameUseRegs(renameMap);
+        } else if (checkReg(val)) {
+            if(renameMap.containsKey((Register)val)) {
+                val = renameMap.get((Register)val);
+            }
+        }
+
     }
 
     @Override
     public void renameDefReg(HashMap<Register, Register> renameMap) {
-        if (tpos instanceof Register && renameMap.containsKey(tpos)) {
-            tpos = renameMap.get(tpos);
+
+        if (checkReg(tpos)) {
+            if(renameMap.containsKey((Register)tpos)) {
+                tpos = renameMap.get((Register)tpos);
+            }
         }
+
     }
 
     @Override
     public LinkedList<Register> getUseRegs() {
-        LinkedList<Register> regs = new LinkedList<>();
-        if (val instanceof AlloSpace) {
-            regs.addAll(((AlloSpace)val).getUseRegs());
-        } else if (val instanceof Register) {
-            regs.add((Register) val);
-        }
-        if (tpos instanceof AlloSpace) {
+        LinkedList<Register> regs;
+        regs = new LinkedList<>();
+        if (checkAllo(tpos)) {
             regs.addAll(((AlloSpace)tpos).getUseRegs());
-        } else if (tpos instanceof Register) {
+        } else if (checkReg(tpos)) {
             regs.add((Register) tpos);
+        }
+        if (checkAllo(val)) {
+            regs.addAll(((AlloSpace)val).getUseRegs());
+        } else if (checkReg(val)) {
+            regs.add((Register) val);
         }
         return regs;
     }

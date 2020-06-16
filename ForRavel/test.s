@@ -243,16 +243,16 @@ _Queue_int.push__myfunc:
 	l_24:
 	mv tp, zero
 	add tp, tp, s11
-	lw a0, 0(tp)
+	lw a1, 0(tp)
 	mv tp, zero
 	add tp, tp, s11
 	addi tp, tp, 8
-	lw a1, 0(tp)
+	lw a0, 0(tp)
 	mv tp, zero
-	add tp, tp, a1
+	add tp, tp, a0
 	li t2, 4
 	mul tp, tp, t2
-	add tp, tp, a0
+	add tp, tp, a1
 	addi tp, tp, 4
 	sw s1, 0(tp)
 	mv tp, zero
@@ -267,13 +267,12 @@ _Queue_int.push__myfunc:
 	add tp, tp, s11
 	lw a0, 0(tp)
 	call __lib_array_size 
-	mv a1, a0
-	mv a0, s4
-	rem a0, a0, a1
+	mv a1, s4
+	rem a1, a1, a0
 	mv tp, zero
 	add tp, tp, s11
 	addi tp, tp, 8
-	sw a0, 0(tp)
+	sw a1, 0(tp)
 	l_26:
 	lw s11, 0(sp)
 	addi sp, sp, 4
@@ -335,11 +334,11 @@ _Queue_int.pop__myfunc:
 	addi sp, sp, -4
 	sw s1, 0(sp)
 	addi sp, sp, -4
-	sw s4, 0(sp)
-	addi sp, sp, -4
 	sw s11, 0(sp)
-	mv s1, a0
-	mv a0, s1
+	addi sp, sp, -4
+	sw s4, 0(sp)
+	mv s4, a0
+	mv a0, s4
 	call _Queue_int.size__myfunc 
 	bnez a0, l_30
 	l_31:
@@ -347,33 +346,32 @@ _Queue_int.pop__myfunc:
 	mv a0, t2
 	call puts 
 	l_30:
-	mv a0, s1
+	mv a0, s4
 	call _Queue_int.top__myfunc 
-	mv s11, a0
+	mv s1, a0
 	mv tp, zero
-	add tp, tp, s1
+	add tp, tp, s4
 	addi tp, tp, 4
-	lw s4, 0(tp)
-	addi s4, s4, 1
+	lw s11, 0(tp)
+	addi s11, s11, 1
 	mv tp, zero
-	add tp, tp, s1
+	add tp, tp, s4
 	lw a0, 0(tp)
 	mv tp, zero
-	add tp, tp, s1
+	add tp, tp, s4
 	lw a0, 0(tp)
 	call __lib_array_size 
-	mv a1, a0
-	mv a0, s4
-	rem a0, a0, a1
+	mv a1, s11
+	rem a1, a1, a0
 	mv tp, zero
-	add tp, tp, s1
+	add tp, tp, s4
 	addi tp, tp, 4
-	sw a0, 0(tp)
-	mv a0, s11
+	sw a1, 0(tp)
+	mv a0, s1
 	l_32:
-	lw s11, 0(sp)
-	addi sp, sp, 4
 	lw s4, 0(sp)
+	addi sp, sp, 4
+	lw s11, 0(sp)
 	addi sp, sp, 4
 	lw s1, 0(sp)
 	addi sp, sp, 4
@@ -407,13 +405,12 @@ _Queue_int.size__myfunc:
 	add tp, tp, s4
 	lw a0, 0(tp)
 	call __lib_array_size 
-	mv a1, a0
 	mv tp, zero
 	add tp, tp, s4
 	addi tp, tp, 8
-	lw a0, 0(tp)
-	add a0, a0, a1
-	mv s11, a0
+	lw a1, 0(tp)
+	add a1, a1, a0
+	mv s11, a1
 	mv tp, zero
 	add tp, tp, s4
 	addi tp, tp, 4
@@ -426,9 +423,9 @@ _Queue_int.size__myfunc:
 	add tp, tp, s4
 	lw a0, 0(tp)
 	call __lib_array_size 
-	mv a1, s11
-	rem a1, a1, a0
-	mv a0, a1
+	mv a1, a0
+	mv a0, s11
+	rem a0, a0, a1
 	l_34:
 	lw s4, 0(sp)
 	addi sp, sp, 4
@@ -464,52 +461,52 @@ _Queue_int.doubleStorage__myfunc:
 	sw s4, 0(sp)
 	addi sp, sp, -4
 	sw s11, 0(sp)
-	mv s6, a0
+	mv s11, a0
 	mv tp, zero
-	add tp, tp, s6
-	lw s1, 0(tp)
+	add tp, tp, s11
+	lw s6, 0(tp)
 	mv tp, zero
-	add tp, tp, s6
+	add tp, tp, s11
 	addi tp, tp, 4
-	lw s11, 0(tp)
+	lw s5, 0(tp)
 	mv tp, zero
-	add tp, tp, s6
+	add tp, tp, s11
 	addi tp, tp, 8
-	lw s9, 0(tp)
-	mv a0, s1
-	mv a0, s1
+	lw s4, 0(tp)
+	mv a0, s6
+	mv a0, s6
 	call __lib_array_size 
 	li t1, 2
 	mul a0, a0, t1
-	mv s5, a0
-	sub s4, s4, s4
-	addi s4, s4, 4
-	mul s4, s4, s5
-	addi s4, s4, 4
-	mv a0, s4
+	mv s1, a0
+	sub s9, s9, s9
+	addi s9, s9, 4
+	mul s9, s9, s1
+	addi s9, s9, 4
+	mv a0, s9
 	call malloc 
 	mv tp, zero
 	add tp, tp, a0
-	sw s5, 0(tp)
+	sw s1, 0(tp)
 	l_36:
-	bgtz s5, l_37
+	bgtz s1, l_37
 	l_38:
 	mv tp, zero
-	add tp, tp, s6
+	add tp, tp, s11
 	sw a0, 0(tp)
 	mv tp, zero
-	add tp, tp, s6
+	add tp, tp, s11
 	addi tp, tp, 4
 	li t1, 0
 	sw t1, 0(tp)
 	mv tp, zero
-	add tp, tp, s6
+	add tp, tp, s11
 	addi tp, tp, 8
 	li t1, 0
 	sw t1, 0(tp)
-	mv a2, s11
+	mv a2, s5
 	l_39:
-	bne a2, s9, l_40
+	bne a2, s4, l_40
 	l_41:
 	l_42:
 	lw s11, 0(sp)
@@ -532,61 +529,61 @@ _Queue_int.doubleStorage__myfunc:
 	ret
 	l_40:
 	mv tp, zero
-	add tp, tp, s6
-	lw a3, 0(tp)
+	add tp, tp, s11
+	lw a1, 0(tp)
 	mv tp, zero
-	add tp, tp, s6
+	add tp, tp, s11
 	addi tp, tp, 8
 	lw a0, 0(tp)
 	mv tp, zero
 	add tp, tp, a2
 	li t2, 4
 	mul tp, tp, t2
-	add tp, tp, s1
+	add tp, tp, s6
 	addi tp, tp, 4
-	lw a1, 0(tp)
+	lw a3, 0(tp)
 	mv tp, zero
 	add tp, tp, a0
 	li t2, 4
 	mul tp, tp, t2
-	add tp, tp, a3
+	add tp, tp, a1
 	addi tp, tp, 4
-	sw a1, 0(tp)
+	sw a3, 0(tp)
 	mv tp, zero
-	add tp, tp, s6
+	add tp, tp, s11
 	addi tp, tp, 8
 	lw a0, 0(tp)
 	mv tp, zero
-	add tp, tp, s6
+	add tp, tp, s11
 	addi tp, tp, 8
 	lw t0, 0(tp)
 	mv tp, zero
-	add tp, tp, s6
+	add tp, tp, s11
 	addi tp, tp, 8
 	lw t0, 0(tp)
 	mv tp, zero
-	add tp, tp, s6
+	add tp, tp, s11
 	addi tp, tp, 8
 	addi t0, t0, 1
 	sw t0, 0(tp)
-	mv s4, a2
-	addi s4, s4, 1
-	mv a0, s1
-	mv a0, s1
+	mv s1, a2
+	addi s1, s1, 1
+	mv a0, s6
+	mv a0, s6
 	call __lib_array_size 
-	mv a1, s4
+	mv a1, s1
 	rem a1, a1, a0
 	mv a2, a1
 	j l_39
 	l_37:
 	mv tp, zero
-	add tp, tp, s5
+	add tp, tp, s1
 	li t2, 4
 	mul tp, tp, t2
 	add tp, tp, a0
 	li t1, 0
 	sw t1, 0(tp)
-	addi s5, s5, -1
+	addi s1, s1, -1
 	j l_36
 
 .globl	main

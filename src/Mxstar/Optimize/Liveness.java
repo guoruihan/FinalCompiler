@@ -8,6 +8,7 @@ import Mxstar.IR.Inst.*;
 import Mxstar.IR.Operand.Register;
 import Mxstar.IR.Operand.*;
 
+import javax.naming.LinkLoopException;
 import java.util.Collection;
 import java.util.HashMap;
 import java.util.HashSet;
@@ -19,19 +20,8 @@ public class Liveness {
     private HashMap<BB, HashSet<VirtualReg>> varKill;
 
 
-    void prepare (Func func) {
-        liveOut = new HashMap<>();
-        ueVar = new HashMap<>();
-        varKill = new HashMap<>();
 
-        for (BB bb: func.basicblocks) {
-            liveOut.put(bb, new HashSet<>());
-            ueVar.put(bb, new HashSet<>());
-            varKill.put(bb, new HashSet<>());
-        }
-    }
-
-    public LinkedList<VirtualReg> tranVir(Collection<Register> regs) {
+    public LinkedList<VirtualReg> turnVir(Collection<Register> regs) {
         LinkedList<VirtualReg> ret = new LinkedList<>();
         for (Register reg: regs) {
             ret.add((VirtualReg)reg);
@@ -39,99 +29,124 @@ public class Liveness {
         return ret;
     }
 
-    private void init(BB bb, boolean afterAllocation) {
-        HashSet<VirtualReg> localUEVar = new HashSet<>();
+    LinkedList<Register> gettmpUse(Inst inst, boolean aftertag){
+        if ((!(inst instanceof Call)) || aftertag) {
+            return inst.getUseRegs();
+        } else {
+            return ((Call) inst).getCallUsed();
+        }
+    }
+
+    private void initBB(BB bb, boolean aftertag) {
         HashSet<VirtualReg> localVarKill = new HashSet<>();
+        HashSet<VirtualReg> localUEVar = new HashSet<>();
 
         for (Inst inst = bb.head; inst != null; inst = inst.next) {
-            LinkedList<Register> tmpUse;
-            if (inst instanceof Call && !afterAllocation) {
-                tmpUse = ((Call) inst).getCallUsed();
-            } else {
-                tmpUse = inst.getUseRegs();
-            }
-            for (VirtualReg reg: tranVir(tmpUse)) {
+            LinkedList<Register> tmpUse = gettmpUse(inst,aftertag);
+            for (VirtualReg reg: turnVir(tmpUse)) {
                 if (!localVarKill.contains(reg)) {
                     localUEVar.add(reg);
                 }
             }
-            localVarKill.addAll(tranVir(inst.getDefRegs()));
+            localVarKill.addAll(turnVir(inst.getDefRegs()));
         }
         ueVar.put(bb, localUEVar);
         varKill.put(bb, localVarKill);
     }
 
-    public void calcLiveOut(Func func, boolean afterAllocation) {
-        prepare(func);
+    void initfunc (Func func) {
+        ueVar = new HashMap<>();
+        varKill = new HashMap<>();
+        liveOut = new HashMap<>();
 
         for (BB bb: func.basicblocks) {
-            init(bb, afterAllocation);
-        }
-
-        boolean changed = true;
-        while(changed) {
-            changed = false;
-            for (BB bb: func.reverseOnCFG) {
-                int oldSize = liveOut.get(bb).size();
-                for (BB succ: bb.successers) {
-                    HashSet<VirtualReg> regs = new HashSet<>(liveOut.get(succ));
-                    regs.removeAll(varKill.get(succ));
-                    regs.addAll(ueVar.get(succ));
-                    liveOut.get(bb).addAll(regs);
-                }
-                if (liveOut.get(bb).size() != oldSize)
-                    changed = true;
-            }
+            ueVar.put(bb, new HashSet<>());
+            varKill.put(bb, new HashSet<>());
+            liveOut.put(bb, new HashSet<>());
         }
     }
+    public void getLiveTag(Func func, boolean aftertag) {
+        initfunc(func);
 
-    public HashMap<BB, HashSet<VirtualReg>> getLiveOut(Func func) {
-        calcLiveOut(func, false);
-        return liveOut;
+        for (BB bb: func.basicblocks) {
+            initBB(bb, aftertag);
+        }
+
+        boolean tag = true;
+        while(tag) {
+            tag = false;
+            for (BB bb: func.reverseOnCFG) {
+                int oldval = liveOut.get(bb).size();
+                for (BB succ: bb.successers) {
+                    HashSet<VirtualReg> regs = new HashSet<>(liveOut.get(succ));
+
+                    regs.removeAll(varKill.get(succ));
+                    regs.addAll(ueVar.get(succ));
+                    //process it!
+                    liveOut.get(bb).addAll(regs);
+                }
+                if (liveOut.get(bb).size() != oldval)
+                    tag = true;
+            }
+        }
     }
 
     public void calcUDCnt(Func func) {
         HashSet<VirtualReg> alreadyUD = new HashSet<>();
         for (BB bb: func.basicblocks) {
             for (Inst inst = bb.head; inst != null; inst = inst.next) {
-                LinkedList<VirtualReg> virRegs = tranVir(inst.getUseRegs());
-                virRegs.addAll(tranVir(inst.getDefRegs()));
+
+                LinkedList<VirtualReg> virRegs = turnVir(inst.getUseRegs());
+                virRegs.addAll(turnVir(inst.getDefRegs()));
                 for (VirtualReg reg: virRegs) {
-                    if (alreadyUD.contains(reg)) {
-                        reg.cntUD = reg.cntUD + 1;
-                    } else {
+
+                    if (!alreadyUD.contains(reg)) {
                         alreadyUD.add(reg);
-                        reg.cntUD = 1;
+                        reg.cntUD = 0;
                     }
+                    reg.cntUD = reg.cntUD + 1;
                 }
+
+
             }
         }
 
     }
 
+    void putin(Graph graph, Inst inst){
+        graph.addRegisters(turnVir(inst.getUseRegs()));
+        graph.addRegisters(turnVir(inst.getDefRegs()));
+    }
+
+    void makeedge(Func func, Graph graph){
+        for (BB bb: func.basicblocks) {
+            HashSet<VirtualReg> liveNow = new HashSet<>(liveOut.get(bb));
+            for (Inst inst = bb.tail; inst != null; inst = inst.prev ) {
+
+                for (VirtualReg reg1: turnVir(inst.getDefRegs())) {
+
+                    for (VirtualReg reg2: liveNow) {
+
+                        graph.addEdge(reg1, reg2);
+                    }
+                }
+                liveNow.removeAll(turnVir(inst.getDefRegs()));
+                liveNow.addAll(turnVir(inst.getUseRegs()));
+            }
+        }
+    }
 
     public void getInterferenceGraph(Func func, Graph graph) {
-        calcLiveOut(func, true);
+        getLiveTag(func, true);
 
         graph.clear();;
         for (BB bb: func.basicblocks) {
             for (Inst inst = bb.head; inst != null; inst = inst.next) {
-                graph.addRegisters(tranVir(inst.getUseRegs()));
-                graph.addRegisters(tranVir(inst.getDefRegs()));
+                putin(graph,inst);
             }
         }
 
-        for (BB bb: func.basicblocks) {
-            HashSet<VirtualReg> liveNow = new HashSet<>(liveOut.get(bb));
-            for (Inst inst = bb.tail; inst != null; inst = inst.prev ) {
-                for (VirtualReg reg1: tranVir(inst.getDefRegs())) {
-                    for (VirtualReg reg2: liveNow) {
-                        graph.addEdge(reg1, reg2);
-                    }
-                }
-                liveNow.removeAll(tranVir(inst.getDefRegs()));
-                liveNow.addAll(tranVir(inst.getUseRegs()));
-            }
-        }
+        makeedge(func, graph);
+
     }
 }

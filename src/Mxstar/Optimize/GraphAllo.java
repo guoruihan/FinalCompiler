@@ -14,22 +14,25 @@ import java.util.*;
 public class GraphAllo {
     public IRProgram irProgram;
     public PrintIR irPrinter;
-    public static Liveness livenessanalyse = new Liveness();
-    public LinkedList<PhysicalReg> generalRegisters;
-    public int K;
+    public LinkedList<PhysicalReg> allRegs;
+    public int Maxcolor;
 
-    public GraphAllo(IRProgram irProgram) {
+    void init_allo(IRProgram irProgram){
         this.irPrinter = new PrintIR();
         this.irProgram = irProgram;
-        generalRegisters = new LinkedList<>();
+        allRegs = new LinkedList<>();
+    }
+
+    public GraphAllo(IRProgram irProgram) {
+        init_allo(irProgram);
         for (PhysicalReg pr : Regs.allRegs) {
             //if (pr.name.equals("zero") || pr.name.equals("sp") || pr.name.equals("s0") || pr.name.equals("tp") || pr.name.equals("t0") || pr.name.equals("t1") || pr.name.equals("t2") || pr.name.equals("ra")||pr.name.equals("t4"))
             if (pr.name.equals("zero") || pr.name.equals("sp") || pr.name.equals("s0") || pr.name.equals("tp") || pr.name.equals("t0") || pr.name.equals("t1") || pr.name.equals("t2") || pr.name.equals("ra") || pr.name.equals("gp")||pr.name.equals("t4") )
                 continue;
             //caller save 的存储有很大问题啊
-            generalRegisters.add(pr);
+            allRegs.add(pr);
         }
-        K = generalRegisters.size();
+        Maxcolor = allRegs.size();
 
         for (Func func: irProgram.funcs) {
             processFunc(func);
@@ -44,54 +47,67 @@ public class GraphAllo {
         return ret;
     }
 
-    private Func func;
-    private Graph originGraph;
-    private Graph graph;
+    private HashSet<VirtualReg> alloRegs;
     private HashSet<VirtualReg> simplifyList;
-    private HashSet<VirtualReg> spillList;
-    private HashSet<VirtualReg> spillRegs;
+    private Graph graph;
+    private HashSet<VirtualReg> alloList;
     private LinkedList<VirtualReg> selectStack;
     private HashMap<VirtualReg, PhysicalReg> color;
 
+
     private void init() {
-        simplifyList = new HashSet<>();
-        spillList = new HashSet<>();
-        spillRegs = new HashSet<>();
-        selectStack = new LinkedList<>();
-        color = new HashMap<>();
+        initofinit();
         for (VirtualReg virReg: graph.getAllRegs()) {
-            if (graph.getDeg(virReg) < K) {
+            if (graph.getDeg(virReg) < Maxcolor) {
                 simplifyList.add(virReg);
             } else {
-                spillList.add(virReg);
+                alloList.add(virReg);
             }
         }
     }
 
-    private void simplify() {
-        VirtualReg reg = simplifyList.iterator().next();
-        LinkedList<VirtualReg> neighbors = new LinkedList<>(graph.getAdjacent(reg));
+    void initofinit(){
+        simplifyList = new HashSet<>();
+        alloList = new HashSet<>();
+        alloRegs = new HashSet<>();
+        selectStack = new LinkedList<>();
+        color = new HashMap<>();
+    }
+
+    void simplify(VirtualReg reg){
         graph.delReg(reg);
         simplifyList.remove(reg);
+    }
+
+    void simplifysmall(VirtualReg reg){
+        alloList.remove(reg);
+        simplifyList.add(reg);
+    }
+
+    private void simplify() {
+        VirtualReg reg = simplifyList.iterator().next();
+        LinkedList<VirtualReg> neighbors = new LinkedList<>(graph.getNeighbor(reg));
+        simplify(reg);
         for (VirtualReg virReg: neighbors) {
-            if (graph.getDeg(virReg) < K && spillList.contains(virReg)) {
-                spillList.remove(virReg);
-                simplifyList.add(virReg);
+            if (graph.getDeg(virReg) < Maxcolor && alloList.contains(virReg)) {
+                simplifysmall(virReg);
             }
         }
         selectStack.addFirst(reg);
     }
 
-    private void spill() {
+    int inf = 1000000000;
+
+    private void Allo() {
         VirtualReg candidate = null;
         double mxRank = -2;
-        for (VirtualReg reg: spillList) {
+        for (VirtualReg reg: alloList) {
             double rank = 1.0 * graph.getDeg(reg) / reg.cntUD  ;
             if (reg.allocatedPhyReg != null) {
                 rank = -1;
             }
             if (reg.spillPlace != null && !Configuration.doGlobalAllocate) {
-                rank = 1e50;
+                rank = inf;
             }
 
             if (rank > mxRank) {
@@ -100,93 +116,104 @@ public class GraphAllo {
             }
         }
         graph.delReg(candidate);
-        spillList.remove(candidate);
+        alloList.remove(candidate);
         selectStack.addFirst(candidate);
     }
 
+    private Func func;
+    private Graph initialGraph;
     private void assignColor() {
         for (VirtualReg virReg: selectStack) {
-            if (virReg.allocatedPhyReg != null)
-                color.put(virReg, virReg.allocatedPhyReg);
+            if (virReg.allocatedPhyReg == null)
+                continue;
+            color.put(virReg, virReg.allocatedPhyReg);
         }
         for (VirtualReg virReg: selectStack) {
             if (virReg.allocatedPhyReg != null)
                 continue;
+
             if (!Configuration.doGlobalAllocate && virReg.spillPlace != null) {
-                spillRegs.add(virReg);
+                alloRegs.add(virReg);
             }
 
-            HashSet<PhysicalReg> okColors = new HashSet<>(generalRegisters);
-//            if (originGraph == null) {
-//                System.out.println("is origin graph a idiot");
-//            }
-            for (VirtualReg neighbor: originGraph.getAdjacent(virReg)) {
+            HashSet<PhysicalReg> okColors = new HashSet<>(allRegs);
+
+            for (VirtualReg neighbor : initialGraph.getNeighbor(virReg)) {
                 if (color.containsKey(neighbor)) {
                     okColors.remove(color.get(neighbor));
                 }
             }
-            if (okColors.isEmpty()) {
-                spillRegs.add(virReg);
-            } else {
-                PhysicalReg phyReg  = null;
-                for (PhysicalReg reg: Regs.callerSave) {
+            if (!okColors.isEmpty()) {
+                PhysicalReg phyReg = null;
+                for (PhysicalReg reg : Regs.callerSave) {
+                    boolean jmptag = false;
                     if (okColors.contains(reg)) {
                         phyReg = reg;
-                        break;
+                        jmptag = true;
                     }
+                    if(jmptag)
+                        break;
                 }
                 if (phyReg == null)
                     phyReg = okColors.iterator().next();
                 color.put(virReg, phyReg);
+            } else {
+                alloRegs.add(virReg);
             }
+
         }
     }
 
     private void rewriteProgram() {
-        HashMap<VirtualReg, AlloSpace> spillPlaces = new HashMap<>();
-        for (VirtualReg virReg: spillRegs) {
+        HashMap<VirtualReg, AlloSpace> alloPlaces = new HashMap<>();
+        for (VirtualReg virReg: alloRegs) {
             if (virReg.spillPlace != null) {
-                spillPlaces.put(virReg, virReg.spillPlace);
+                alloPlaces.put(virReg, virReg.spillPlace);
             } else {
-                spillPlaces.put(virReg, new Stack(virReg.name));
+                alloPlaces.put(virReg, new Stack(virReg.name));
             }
         }
         for (BB bb: func.basicblocks) {
             for (Inst inst = bb.head; inst != null; inst = inst.next) {
-                LinkedList<VirtualReg> used = tranVir(inst.getUseRegs());
-                LinkedList<VirtualReg> defined = tranVir(inst.getDefRegs());
-                HashMap<Register, Register> renameMap = new HashMap<>();
-                used.retainAll(spillRegs);
-                defined.retainAll(spillRegs);
-                for (VirtualReg virReg: used) {
-                    if (!renameMap.containsKey(virReg)) {
-                        renameMap.put(virReg, new VirtualReg(""));
-                    }
-                }
-                for (VirtualReg virReg: defined) {
-                    if (!renameMap.containsKey(virReg)) {
-                        renameMap.put(virReg, new VirtualReg(""));
-                    }
-                }
-                inst.renameUseReg(renameMap);
-                inst.renameDefReg(renameMap);
-                for (VirtualReg virReg: used) {
-                    inst.prepend(new Move(bb, renameMap.get(virReg), spillPlaces.get(virReg)));
-                }
-                for (VirtualReg virReg: defined) {
-                    inst.append(new Move(bb, spillPlaces.get(virReg), renameMap.get(virReg)));
-                    inst = inst.next;
-                }
+                dorewrite(inst,bb,alloPlaces);
             }
         }
     }
 
+    void dorewrite(Inst inst,BB nbb,HashMap<VirtualReg, AlloSpace> alloPlaces){
+
+        LinkedList<VirtualReg> used = tranVir(inst.getUseRegs());
+        LinkedList<VirtualReg> defined = tranVir(inst.getDefRegs());
+        HashMap<Register, Register> renameMap = new HashMap<>();
+        used.retainAll(alloRegs);
+        for (VirtualReg virReg: used) {
+            if (!renameMap.containsKey(virReg)) {
+                renameMap.put(virReg, new VirtualReg(""));
+            }
+        }
+        defined.retainAll(alloRegs);
+        for (VirtualReg virReg: defined) {
+            if (!renameMap.containsKey(virReg)) {
+                renameMap.put(virReg, new VirtualReg(""));
+            }
+        }
+        inst.renameUseReg(renameMap);
+        inst.renameDefReg(renameMap);
+        for (VirtualReg virReg: used) {
+            inst.prepend(new Move(nbb, renameMap.get(virReg), alloPlaces.get(virReg)));
+        }
+        for (VirtualReg virReg: defined) {
+            inst.append(new Move(nbb, alloPlaces.get(virReg), renameMap.get(virReg)));
+            inst = inst.next;
+        }
+    }
+
+    public static Liveness liveness= new Liveness();
     private void rewriteRegs() {
         HashMap<Register, Register> tmpMap = new HashMap<>();
         for (HashMap.Entry<VirtualReg, PhysicalReg> entry: color.entrySet()) {
             tmpMap.put(entry.getKey(), entry.getValue());
         }
-//        System.out.println(func.name + tmpMap.size());
         for (BB bb: func.basicblocks) {
             for (Inst inst = bb.head; inst != null; inst = inst.next) {
                 inst.renameDefReg(tmpMap);
@@ -197,27 +224,27 @@ public class GraphAllo {
 
     private void processFunc (Func func) {
         this.func = func;
-        originGraph = new Graph();
-        while(true) {
-            livenessanalyse.getInterferenceGraph(func, originGraph);
-            livenessanalyse.calcUDCnt(func);
+        initialGraph = new Graph();
+        for(;;){
+            liveness.getInterferenceGraph(func, initialGraph);
+            liveness.calcUDCnt(func);
 
-            graph = new Graph(originGraph);
+            graph = new Graph(initialGraph);
             init();
             while(true) {
-                if (!simplifyList.isEmpty())
+                if (!simplifyList.isEmpty()) {
                     simplify();
-                else if (!spillList.isEmpty())
-                    spill();
-                else
-                    break;
+                    continue;
+                }
+                if (!alloList.isEmpty()) {
+                    Allo();
+                    continue;
+                }
+                break;
             }
-//            if (originGraph == null) {
-//                System.out.println();
-//            }
             assignColor();
 
-            if (!spillRegs.isEmpty()) {
+            if (!alloRegs.isEmpty()) {
                 rewriteProgram();
             } else {
                 rewriteRegs();
@@ -225,13 +252,6 @@ public class GraphAllo {
             }
         }
 
-        /*
-        System.err.println("===============================================");
-        System.err.println("IR for debug: after " + func.name);
-        PrintIR irPrinter = new PrintIR();
-        irPrinter.visit(irProgram);
-        irPrinter.printTo(System.err);
-*/
 
         func.finishAllocate();
     }

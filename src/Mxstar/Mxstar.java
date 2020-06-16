@@ -104,6 +104,11 @@ public class Mxstar {
         //irPrinter.visit(irProgram);
        // irPrinter.printTo(System.err);
 
+        SVN svn = new SVN(irProgram);
+        svn.run();
+
+        Elimination Elimination = new Elimination(irProgram);
+        Elimination.run();
 
         CorrectIR irCorrector = new CorrectIR();
         irProgram.accept(irCorrector);

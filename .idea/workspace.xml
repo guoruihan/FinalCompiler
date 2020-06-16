@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3de38f0f-e8b3-4a5b-9477-cb3cc979aa4c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
@@ -92,18 +93,18 @@
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Regs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Regs.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Mxstar$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Mxstar$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Mxstar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Mxstar.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/BuildStack$Frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/BuildStack$Frame.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/BuildStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/BuildStack.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/Elimination.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/Elimination.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/BuildStack$Frame.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/BuildStack.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/Elimination.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/Graph.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/GraphAllo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/GraphAllo.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/LVN$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/LVN$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/LVN.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/LVN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/LVN$1.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/LVN.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/Liveness.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/Liveness.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/ProcessDead.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/ProcessDead.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVN.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVN.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVNTable$SVNKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVNTable$SVNKey.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVNTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVNTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/ProcessDead.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVN.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVNTable$SVNKey.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVNTable.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/ArrayType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/ArrayType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/ClassSymbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/ClassSymbol.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/ClassType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/ClassType.class" afterDir="false" />
@@ -171,7 +172,13 @@
       <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/Func.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/Func.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/PrintIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/PrintIR.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/Mxstar.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/Mxstar.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/BuildStack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/BuildStack.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/Elimination.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/GraphAllo.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/Optimize/GraphAllo.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/LVN.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/ProcessDead.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/SVN.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Mxstar/Optimize/SVNTable.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/file.in" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/file.in" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.out" beforeDir="false" afterPath="$PROJECT_DIR$/test.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test.s" beforeDir="false" afterPath="$PROJECT_DIR$/test.s" afterDir="false" />
@@ -242,7 +249,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592204875668</updated>
-      <workItem from="1592204880380" duration="31152000" />
+      <workItem from="1592204880380" duration="31787000" />
     </task>
     <servers />
   </component>
@@ -258,30 +265,30 @@
       <screen x="0" y="0" width="1463" height="783" />
     </state>
     <state x="169" y="207" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1463.783@0.0.1463.783" timestamp="1592206158762" />
-    <state x="462" y="138" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592205489438">
+    <state x="462" y="138" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1592279571125">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state x="462" y="138" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1463.783@0.0.1463.783" timestamp="1592205489438" />
+    <state x="462" y="138" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1463.783@0.0.1463.783" timestamp="1592279571125" />
     <state x="495" y="194" key="FileChooserDialogImpl" timestamp="1592215991697">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
     <state x="495" y="194" key="FileChooserDialogImpl/0.0.1463.783@0.0.1463.783" timestamp="1592215991697" />
-    <state width="1420" height="94" key="GridCell.Tab.0.bottom" timestamp="1592279035323">
+    <state width="1420" height="2" key="GridCell.Tab.0.bottom" timestamp="1592279671630">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="94" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1592279035323" />
-    <state width="1420" height="94" key="GridCell.Tab.0.center" timestamp="1592279035323">
+    <state width="1420" height="2" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1592279671630" />
+    <state width="1420" height="2" key="GridCell.Tab.0.center" timestamp="1592279671630">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="94" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1592279035323" />
-    <state width="1420" height="94" key="GridCell.Tab.0.left" timestamp="1592279035323">
+    <state width="1420" height="2" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1592279671630" />
+    <state width="1420" height="2" key="GridCell.Tab.0.left" timestamp="1592279671630">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="94" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1592279035323" />
-    <state width="1420" height="94" key="GridCell.Tab.0.right" timestamp="1592279035323">
+    <state width="1420" height="2" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1592279671630" />
+    <state width="1420" height="2" key="GridCell.Tab.0.right" timestamp="1592279671630">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="94" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1592279035323" />
+    <state width="1420" height="2" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1592279671630" />
     <state width="1420" height="256" key="GridCell.Tab.1.bottom" timestamp="1592270054436">
       <screen x="0" y="0" width="1463" height="783" />
     </state>

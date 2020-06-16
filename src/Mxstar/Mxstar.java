@@ -25,8 +25,6 @@ public class Mxstar {
         /*String path = "C:\\Users\\86186\\Desktop\\FinalSubmit\\src\\Mxstar\\file.in";
         FileReader fr = new FileReader(path);
         BufferedReader is = new BufferedReader(fr);*/
-        //InputStream is = Config.in;
-//        FileInputStream is = new FileInputStream("program.txt");
         ANTLRInputStream ais = new ANTLRInputStream(is);
         MxstarLexer mstarLexer = new MxstarLexer(ais);
         CommonTokenStream tokens = new CommonTokenStream(mstarLexer);
@@ -76,9 +74,7 @@ public class Mxstar {
 
 
         GlobalSymbolTable globalSymbolTable = symbolTableBuilder.gSymT;
-/*
-        GlobalSymbolTable globalSymbolTable = symbolTableBuilder.globalSymbolTable;
-*/
+
 
         SemanticChecker semanticChecker = new SemanticChecker(errorListener, globalSymbolTable);
         semanticChecker.visit(astProgram);
@@ -89,9 +85,6 @@ public class Mxstar {
         }
 
 
-        LoopElimination LoopElimination = new LoopElimination(astProgram);
-        LoopElimination.visit(astProgram);
-
         Regs.init();
 
         BuildIR irBuilder = new BuildIR(globalSymbolTable);
@@ -100,37 +93,15 @@ public class Mxstar {
 
 
         PrintIR irPrinter = new PrintIR();
-        //irPrinter.visit(irProgram);
-       // irPrinter.printTo(System.err);
-
-      /*  SVN svn = new SVN(irProgram);
-        svn.run();
-
-        Elimination Elimination = new Elimination(irProgram);
-        Elimination.run();*/
 
         CorrectIR irCorrector = new CorrectIR();
         irProgram.accept(irCorrector);
 
-/*
-        irPrinter= new PrintIR();
-        irPrinter.visit(irProgram);
-        irPrinter.printTo(System.err);*/
 
-
-        switch (Configuration.allocator) {
-         /*   case NAIVE_ALLOCATOR:
-                EasyAllo naiveAllocator = new EasyAllo(irProgram);
-                break;*/
-            case GRAPH_ALLOCATOR:
-                GraphAllo graphAllocator = new GraphAllo(irProgram);
-                break;
-        }
+        GraphAllo graphAllocator = new GraphAllo(irProgram);
 
         BuildStack stackFrameBuilder = new BuildStack(irProgram);
         stackFrameBuilder.run();
-
-        //String output_path = "output.s";
 
 
         String output_path = "output.s";

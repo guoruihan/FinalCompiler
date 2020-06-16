@@ -155,7 +155,9 @@ public class LoopElimination implements AstVisitor {
     @Override
     public void visit(CondStmt node) {
         node.expression.accept(this);
-        node.thenStmt.accept(this);
+        if(node.thenStmt != null) {
+            node.thenStmt.accept(this);
+        }
         if (node.elseStmt != null) {
             node.elseStmt.accept(this);
         }

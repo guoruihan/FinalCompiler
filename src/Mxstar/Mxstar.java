@@ -3,10 +3,7 @@ package Mxstar;
 import Mxstar.Ast.AstProgram;
 import Mxstar.FrontEnd.*;
 import Mxstar.IR.*;
-import Mxstar.Optimize.BuildStack;
-import Mxstar.Optimize.Elimination;
-import Mxstar.Optimize.GraphAllo;
-import Mxstar.Optimize.SVN;
+import Mxstar.Optimize.*;
 import org.antlr.v4.runtime.*;
 import org.antlr.v4.runtime.tree.*;
 import Mxstar.ErrorProcessor.*;
@@ -92,6 +89,8 @@ public class Mxstar {
         }
 
 
+        LoopElimination LoopElimination = new LoopElimination(astProgram);
+        LoopElimination.visit(astProgram);
 
         Regs.init();
 

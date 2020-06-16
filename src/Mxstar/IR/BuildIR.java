@@ -679,7 +679,6 @@ public class BuildIR implements AstVisitor {
                     operand = VirtualReg;
                 }
 
-
                 curBB.append(new Call(curBB, va0, func, operand));
 
                 VirtualReg retvalue = new VirtualReg("");

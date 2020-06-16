@@ -3,18 +3,168 @@
   <component name="ChangeListManager">
     <list default="true" id="3de38f0f-e8b3-4a5b-9477-cb3cc979aa4c" name="Default Changelist" comment="">
       <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Mxstar/IR/BuildIR.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Mxstar/IR/BuildIR.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Mxstar/IR/Func.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Mxstar/IR/Func.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Mxstar/IR/PrintIR.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Mxstar/IR/PrintIR.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/bin/Mxstar/Mxstar.class" beforeDir="false" afterPath="$PROJECT_DIR$/bin/Mxstar/Mxstar.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/builtin.s" beforeDir="false" afterPath="$PROJECT_DIR$/builtin.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/EasyAllo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/EasyAllo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/ArrayTypeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/ArrayTypeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/AstNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/AstNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/AstProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/AstProgram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/AstVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/AstVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/ClassDecl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/ClassDecl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/ClassTypeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/ClassTypeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Decl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Decl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/ArrayExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/ArrayExpr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/AssignExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/AssignExpr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/BinaryExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/BinaryExpr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/Expr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/Expr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/FuncCallExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/FuncCallExpr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/Identifier.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/Identifier.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/LiteralExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/LiteralExpr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/MembExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/MembExpr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/NewExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/NewExpr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/UnaryExpr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Expr/UnaryExpr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/FuncDecl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/FuncDecl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/PrimitiveTypeNode.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/PrimitiveTypeNode.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/BlockStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/BlockStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/CondStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/CondStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/EmptyStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/EmptyStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/ExprStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/ExprStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/JumpStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/JumpStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/LoopStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/LoopStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/Stmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/Stmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/VarDeclStmt.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Statement/VarDeclStmt.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/Type.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/VarDecl.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Ast/VarDecl.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Configuration$ALLOCATOR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Configuration$ALLOCATOR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Configuration.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Configuration.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/ErrorProcessor/CompileErrorListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/ErrorProcessor/CompileErrorListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/ErrorProcessor/ParserErrorListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/ErrorProcessor/ParserErrorListener.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/FrontEnd/AstBuild.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/FrontEnd/AstBuild.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/FrontEnd/Position.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/FrontEnd/Position.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/FrontEnd/SemanticChecker.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/FrontEnd/SemanticChecker.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/FrontEnd/SymbolTableBuilder.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/FrontEnd/SymbolTableBuilder.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/BB.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/BB.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/BuildIR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/BuildIR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/CorrectIR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/CorrectIR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Func$Type.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Func$Type.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Func.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Func.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/IRProgram.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/IRProgram.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/IRVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/IRVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/BinaryInst$BinaryOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/BinaryInst$BinaryOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/BinaryInst.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/BinaryInst.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Call.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Call.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cdq.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cdq.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cjump$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cjump$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cjump$CompareOP.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cjump$CompareOP.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cjump.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Cjump.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Inst.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Inst.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Instack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Instack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Jump.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Jump.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Leave.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Leave.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Li.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Li.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Move.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Move.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Outstack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Outstack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Return.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Return.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Setcc$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Setcc$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Setcc.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/Setcc.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/UnaryInst$UnaryOp.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/UnaryInst$UnaryOp.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/UnaryInst.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Inst/UnaryInst.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/OldPrintIR$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/OldPrintIR$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/OldPrintIR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/OldPrintIR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/Address.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/Address.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/AlloSpace.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/AlloSpace.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/ConstVal.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/ConstVal.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/Constant.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/Constant.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/FuncAddr.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/FuncAddr.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/Imm.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/Imm.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/Operand.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/Operand.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/PhysicalReg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/PhysicalReg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/Register.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/Register.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/Stack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/Stack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/VirtualReg.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Operand/VirtualReg.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/PrintIR$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/PrintIR$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/PrintIR.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/PrintIR.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Regs.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/IR/Regs.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Mxstar$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Mxstar$1.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Mxstar.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Mxstar.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/BuildStack$Frame.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/BuildStack$Frame.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/BuildStack.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/BuildStack.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/Elimination.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/Elimination.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/Graph.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/Graph.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/GraphAllo.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/GraphAllo.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/LVN$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/LVN$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/LVN.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/LVN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/Liveness.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/Liveness.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/ProcessDead.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/ProcessDead.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVN.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVN.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVNTable$SVNKey.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVNTable$SVNKey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVNTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Optimize/SVNTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/ArrayType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/ArrayType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/ClassSymbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/ClassSymbol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/ClassType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/ClassType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/FuncSymbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/FuncSymbol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/GlobalSymbolTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/GlobalSymbolTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/PrimitiveSymbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/PrimitiveSymbol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/PrimitiveType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/PrimitiveType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/SymbolTable.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/SymbolTable.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/TypeSymbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/TypeSymbol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/VarSymbol.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/VarSymbol.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/VarType.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/Symbol/VarType.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/file.in" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Mxstar/file.in" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarBaseListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarBaseListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarBaseVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarBaseVisitor.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarLexer.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarLexer.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarListener.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarListener.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ArrayExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ArrayExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$AssignExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$AssignExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$BinaryExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$BinaryExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$BlockContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$BlockContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$BlockStmtContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$BlockStmtContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ClassDefContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ClassDefContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ConditionStatementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ConditionStatementContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ConditionStmtContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ConditionStmtContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ConstructDefinitionContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ConstructDefinitionContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$CreatorContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$CreatorContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$DeclsContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$DeclsContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$EmptyContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$EmptyContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$EmptyStmtContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$EmptyStmtContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ExprStmtContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ExprStmtContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ForExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ForExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$FuncDefContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$FuncDefContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$FunctionCallContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$FunctionCallContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$FuntionExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$FuntionExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$InvalidCreaterContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$InvalidCreaterContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$JumpStatementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$JumpStatementContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$JumpStmtContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$JumpStmtContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$LoopStatementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$LoopStatementContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$LoopStmtContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$LoopStmtContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$MemDeclContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$MemDeclContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$MemberExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$MemberExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$NewExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$NewExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ParaDeclContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ParaDeclContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ParaDeclListContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ParaDeclListContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$PrimaryExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$PrimaryExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ProgramContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ProgramContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$StatementContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$StatementContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$SubExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$SubExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$UnaryExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$UnaryExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ValidCreaterContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$ValidCreaterContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$VarDeclContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$VarDeclContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$VarDefContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$VarDefContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$VarListContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$VarListContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$VarType1Context.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$VarType1Context.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$VariableStmtContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$VariableStmtContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$VariableTypeBasicContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$VariableTypeBasicContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$VariableTypeContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$VariableTypeContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$WhileExprContext.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser$WhileExprContext.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarParser.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarVisitor.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/FinalSubmit/Parser/MxstarVisitor.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ravel.out" beforeDir="false" afterPath="$PROJECT_DIR$/ravel.out" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/FrontEnd/AstBuild.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/FrontEnd/AstBuild.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Mxstar/IR/BuildIR.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Mxstar/IR/BuildIR.java" afterDir="false" />
@@ -52,13 +202,15 @@
     <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Libraries" />
-    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RunManager">
     <configuration name="Mxstar" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="11" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="Mxstar.Mxstar" />
       <module name="FinalSubmit" />
       <method v="2">
@@ -82,7 +234,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1592204875668</updated>
-      <workItem from="1592204880380" duration="22800000" />
+      <workItem from="1592204880380" duration="25758000" />
     </task>
     <servers />
   </component>
@@ -90,10 +242,10 @@
     <option name="version" value="1" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="163" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592206189191">
+    <state x="163" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1592270199936">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state x="163" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1463.783@0.0.1463.783" timestamp="1592206189191" />
+    <state x="163" y="46" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1463.783@0.0.1463.783" timestamp="1592270199936" />
     <state x="169" y="207" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1592206158762">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
@@ -106,42 +258,42 @@
       <screen x="0" y="0" width="1463" height="783" />
     </state>
     <state x="495" y="194" key="FileChooserDialogImpl/0.0.1463.783@0.0.1463.783" timestamp="1592215991697" />
-    <state width="1420" height="167" key="GridCell.Tab.0.bottom" timestamp="1592267479115">
+    <state width="1420" height="35" key="GridCell.Tab.0.bottom" timestamp="1592270381995">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="167" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1592267479115" />
-    <state width="1420" height="167" key="GridCell.Tab.0.center" timestamp="1592267479115">
+    <state width="1420" height="35" key="GridCell.Tab.0.bottom/0.0.1463.783@0.0.1463.783" timestamp="1592270381995" />
+    <state width="1420" height="35" key="GridCell.Tab.0.center" timestamp="1592270381995">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="167" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1592267479115" />
-    <state width="1420" height="167" key="GridCell.Tab.0.left" timestamp="1592267479115">
+    <state width="1420" height="35" key="GridCell.Tab.0.center/0.0.1463.783@0.0.1463.783" timestamp="1592270381995" />
+    <state width="1420" height="35" key="GridCell.Tab.0.left" timestamp="1592270381995">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="167" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1592267479115" />
-    <state width="1420" height="167" key="GridCell.Tab.0.right" timestamp="1592267479115">
+    <state width="1420" height="35" key="GridCell.Tab.0.left/0.0.1463.783@0.0.1463.783" timestamp="1592270381995" />
+    <state width="1420" height="35" key="GridCell.Tab.0.right" timestamp="1592270381995">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="167" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1592267479115" />
-    <state width="1420" height="71" key="GridCell.Tab.1.bottom" timestamp="1592222601926">
+    <state width="1420" height="35" key="GridCell.Tab.0.right/0.0.1463.783@0.0.1463.783" timestamp="1592270381995" />
+    <state width="1420" height="256" key="GridCell.Tab.1.bottom" timestamp="1592270054436">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="71" key="GridCell.Tab.1.bottom/0.0.1463.783@0.0.1463.783" timestamp="1592222601926" />
-    <state width="1420" height="71" key="GridCell.Tab.1.center" timestamp="1592222601926">
+    <state width="1420" height="256" key="GridCell.Tab.1.bottom/0.0.1463.783@0.0.1463.783" timestamp="1592270054436" />
+    <state width="1420" height="256" key="GridCell.Tab.1.center" timestamp="1592270054436">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="71" key="GridCell.Tab.1.center/0.0.1463.783@0.0.1463.783" timestamp="1592222601926" />
-    <state width="1420" height="71" key="GridCell.Tab.1.left" timestamp="1592222601926">
+    <state width="1420" height="256" key="GridCell.Tab.1.center/0.0.1463.783@0.0.1463.783" timestamp="1592270054436" />
+    <state width="1420" height="256" key="GridCell.Tab.1.left" timestamp="1592270054435">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="71" key="GridCell.Tab.1.left/0.0.1463.783@0.0.1463.783" timestamp="1592222601926" />
-    <state width="1420" height="71" key="GridCell.Tab.1.right" timestamp="1592222601926">
+    <state width="1420" height="256" key="GridCell.Tab.1.left/0.0.1463.783@0.0.1463.783" timestamp="1592270054435" />
+    <state width="1420" height="256" key="GridCell.Tab.1.right" timestamp="1592270054436">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state width="1420" height="71" key="GridCell.Tab.1.right/0.0.1463.783@0.0.1463.783" timestamp="1592222601926" />
-    <state x="41" y="0" width="1038" height="748" key="SettingsEditor" timestamp="1592205013190">
+    <state width="1420" height="256" key="GridCell.Tab.1.right/0.0.1463.783@0.0.1463.783" timestamp="1592270054436" />
+    <state x="77" y="13" width="1038" height="748" key="SettingsEditor" timestamp="1592270238032">
       <screen x="0" y="0" width="1463" height="783" />
     </state>
-    <state x="41" y="0" width="1038" height="748" key="SettingsEditor/0.0.1463.783@0.0.1463.783" timestamp="1592205013190" />
+    <state x="77" y="13" width="1038" height="748" key="SettingsEditor/0.0.1463.783@0.0.1463.783" timestamp="1592270238032" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -72,7 +72,7 @@ int main() {
   Queue_int q = new Queue_int();
 
   int i;
-  int N = 1000;
+  int N = 100;
   for (i = 0; i < N; ++i)
     q.push(i);
   if (q.size() != N) {

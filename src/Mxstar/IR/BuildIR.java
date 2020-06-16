@@ -670,10 +670,8 @@ public class BuildIR implements AstVisitor {
         if (node.object.type instanceof ArrayType) {
             if(node.methodCall.functionName.equals("size")){
                 Func func = functionMap.get("__lib_array_size");
-                LinkedList<Operand> args = new LinkedList<>();
-                args.add(baseAddr);
-                args.add(va0);
-                curBB.append(new Call(curBB, va0, func, args));
+
+                curBB.append(new Call(curBB, va0, func, Result.get(node.object)));
 
                 VirtualReg retvalue = new VirtualReg("");
                 curBB.append(new Move(curBB, retvalue, va0));
